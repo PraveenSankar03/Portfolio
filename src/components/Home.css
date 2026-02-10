@@ -5,7 +5,7 @@
   font-weight: bold;
   font-size: 43px;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .container-bio {
@@ -62,6 +62,19 @@
   margin-top: 70px;
 }
 
+.skills-title {
+  border: 1px solid black;
+  height: 80px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  font-family:"Outfit", sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 40px;
+}
+
 .pro-card {
   width: 80%;
   margin-left: auto;
@@ -87,4 +100,56 @@
   font-weight: bold;
   font-size: 30px;
   padding-bottom: 25px;
+}
+
+.demo {
+  background-color: black;
+  color: white;
+}
+
+.skill-card {
+  width: 18rem
+}
+
+.container-skills {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 160px);
+  gap: 40px;
+  justify-content: center;
+}
+
+.skill-pic {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-pic img {
+  height: 100%;
+  width: auto;      
+  object-fit: contain;
+  background-color: white;
+}
+
+.skill-pic span {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .container-skills {
+    grid-template-columns: repeat(2, 120px);
+  }
+}
+
+@media (max-width: 480px) {
+  .container-skills {
+    grid-template-columns: repeat(1, 120px);
+  }
 }
