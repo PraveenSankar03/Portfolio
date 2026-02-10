@@ -22,8 +22,12 @@ const Home = () => {
         </p>
       </div>
       <div class="container-contact">
-        <div class="aboutme">About Me</div>
-        <div class="contactme">Contact Me</div>
+        <a href=''>
+        <button class="aboutme">About Me</button>
+        </a>
+        <a href=''>
+        <button class="contactme">Contact Me</button>
+        </a>
       </div>
       <motion.h1
         initial={{ opacity: 0, y: 20 }}
@@ -74,7 +78,7 @@ const Home = () => {
               </ul>
               <p>Tech Stack: React, JavaScript, HTML, CSS.</p>
               <a href="https://movie-browser-using-reactjs.netlify.app/">
-                <button class="demo"> Live Demo</button>
+                <button class="demo"> Live Demo </button>
               </a>
             </p>
           </div>
