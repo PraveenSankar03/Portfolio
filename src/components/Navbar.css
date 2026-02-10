@@ -1,0 +1,14 @@
+.navbar-brand {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.nav-link {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 18px;
+  font-style: normal;
+}

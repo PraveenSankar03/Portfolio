@@ -1,14 +1,16 @@
-import './App.css';
+import "./App.css";
 import Navbar from "./components/Navbar .js";
-import AboutView from './components/About.js';
-import {Routes, Route} from "react-router-dom"
+import Home from "./components/Home.js";
+import AboutView from "./components/About.js";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <Routes>
-      <Route path="/about" element={<AboutView />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutView />} />
       </Routes>
     </div>
   );

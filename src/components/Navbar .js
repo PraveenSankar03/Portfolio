@@ -1,9 +1,11 @@
+import "./Navbar.css";
+
 const Navbar = () => {
   return (
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          PRAVEEN KUMAR S
+          PRAVEEN'S PORTFOLIO
         </a>
         <button
           class="navbar-toggler"
@@ -20,22 +22,22 @@ const Navbar = () => {
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">
-                Home
+                Overview
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                Features
+                Projects
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                Pricing
+                Background
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">
-                Disabled
+              <a class="nav-link">
+                Skills
               </a>
             </li>
           </ul>
