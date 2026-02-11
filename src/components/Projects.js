@@ -1,31 +1,25 @@
-import { motion} from "framer-motion";
-import './Project.css'
+import { motion } from "framer-motion";
+import "./Projects.css";
 
 const Projects = () => {
-    return (
-        <div>
-        <motion.h1
+  return (
+    <div>
+      <motion.h1
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        animate={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
         className="hero-text"
-        class="project-title"
+        class="topic"
       >
-        <div class="project-section">Projects</div>
+        Projects
       </motion.h1>
-      <div class="container-project">
-        <div class="project-intro">
-          Some of the projects I've built to practice and improve my development
-          skills.
-        </div>
-        <div class="card mb-3 pro-card project-cards">
-          <h3 class="card-title">Movie Browser using React.js</h3>
-          <img src="Moviebrowser.jpeg" class="card-img-top" alt="img"></img>
-          <div class="card-body">
-            <h5>Description</h5>
-            <p class="card-text">
-              <ul>
+      <div class='project-1'>
+        <h1 class='project1-title'>Movie Browser Using React.js</h1>
+          <img class ='project-img' src='Moviebrowser.jpeg'></img>
+        <p class='content'>
+          <ul>
                 <li>
                   Built a movie browser application using React to explore and
                   view movies.
@@ -51,22 +45,21 @@ const Projects = () => {
                   across devices.
                 </li>
               </ul>
-              <p>Tech Stack: React, JavaScript, HTML, CSS.</p>
-              <a href="https://movie-browser-using-reactjs.netlify.app/">
-                <button class="demo"> Live Demo </button>
-              </a>
-            </p>
-          </div>
-        </div>
-        <div class="card mb-3 pro-card project-cards">
-          <h3 class="card-title">
-            Opinions - Social Microblogging Platform using Django.
-          </h3>
-          <img src="Opinions.jpeg" class="card-img-top" alt="img"></img>
-          <div class="card-body">
-            <h5>Description</h5>
-            <p class="card-text">
-              <ul>
+              <h5>Tech Stack: React, JavaScript, HTML5.</h5>
+        </p>
+        <div class='demo-button'>
+        <a href="https://movie-browser-using-reactjs.netlify.app/" target='blank'>
+          <button class='button'>Live Demo</button>
+        </a>
+        <a href="https://github.com/PraveenSankar03/Movie-Browser-using-React.js" target='blank'>
+          <button class='button'>GitHub</button>
+        </a>
+      </div>
+        <div class='project-2'>
+          <h1 class='project2-title'>Social MicroBlogging Platform using Django.</h1>
+          <img class ='project-img' src='Opinions.jpeg'></img>
+          <p class='content'>
+            <ul>
                 <li>
                   Developed a lightweight social media application that allows
                   users to post and share text-based thoughts.
@@ -96,16 +89,22 @@ const Projects = () => {
                   experience.
                 </li>
               </ul>
-              <p>Tech Stack: Django, Python, JavaScript, HTML.</p>
-              <p>
-                <small>Live demo not deployed. Source code Available.</small>
-              </p>
-            </p>
+              <h5>Tech Stack: Django, Python, JavaScript.</h5>
+          </p>
+          <div class='demo-button'>
+            <a href="https://github.com/PraveenSankar03/django-social-media" target='blank'>
+              <button class='button'>GitHub</button>
+            </a>
           </div>
         </div>
       </div>
-        </div>
-    )
+      <div class='back-button'>
+        <a href='/'>
+            <button class='button'>Back to Overview</button>
+        </a>
+      </div>
+    </div>
+  )
 }
 
 export default Projects;
