@@ -1,11 +1,19 @@
 .topic {
-  font-family: "Outfit", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: bold;
-  font-size: 43px;
+  font-size: 45px;
   text-align: center;
   margin-top: 20px;
+}
+
+.sub-hero {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
 }
 
 .container-bio {
@@ -15,7 +23,7 @@
 }
 
 .bio {
-  font-family: "Caveat", cursive;
+  font-family: "Montserrat", cursive;
   font-optical-sizing: auto;
   font-style: normal;
   text-align: center;
