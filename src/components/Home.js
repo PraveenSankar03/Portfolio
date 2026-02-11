@@ -1,5 +1,6 @@
 import "./Home.css";
 import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -14,27 +15,34 @@ const Home = () => {
         >
           Hi, I'm Praveen Kumar.
         </motion.h1>
-        <div class='sub-hero'>
-          Frontend Developer / Backend Developer
-        </div>
+        <div class="sub-hero">Fullstack Developer</div>
       </header>
       <div class="container-bio">
         <p class="bio">
-          A Fullstack Developer specializing in React and Django. I
-          build responsive, scalable web applications with clean UI. Focused on
-          building user-friendly applications and continuously
-          improving my skills.
+          A Fullstack Developer specializing in React and Django. I build
+          responsive, scalable web applications with clean UI.
         </p>
       </div>
-      <div class="container-contact">
+      <div class="techstack">
+        <p>React • JavaScript • Django • Pyhton • Git • GitHub</p>
+      </div>
+      <div class="container-overview">
         <a href="/projects">
           <button class="aboutme">View Projects</button>
         </a>
-        <a href="/PRAVEEN_RESUME.pdf"
-            target='blank'>
+        <a href="/PRAVEEN_RESUME.pdf" target="blank">
           <button class="contactme">View Resume</button>
         </a>
       </div>
+      <div class="social-icons">
+          <a href="https://github.com/PraveenSankar03"
+          target='blank'>
+            <FaGithub />
+          </a>
+          <a href="mailto:praveensankar3333@gmail.com">
+            <FaEnvelope />
+          </a>
+        </div>
     </div>
   );
 };

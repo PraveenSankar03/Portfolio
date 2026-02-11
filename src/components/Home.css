@@ -12,12 +12,13 @@
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
 }
 
 .container-bio {
-  height: 100px;
+  display: flex;
+  height: 90px;
   width: 800px;
   margin: auto;
 }
@@ -31,7 +32,17 @@
   font-size: 20px;
 }
 
-.container-contact {
+.techstack {
+  font-family: "Montserrat", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.container-overview {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,6 +50,41 @@
   width: fit-content;
   margin: 0 auto;
 }
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  font-size: 30px;
+  padding-top: 30px;
+}
+
+.social-icons a {
+  color: black;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0077ff;
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .aboutme {
   text-decoration: none;
