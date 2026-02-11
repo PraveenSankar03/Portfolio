@@ -31,11 +31,6 @@ const Navbar = () => {
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/background">
-                Background
-              </a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href='/skills'>
                 Skills
               </a>
