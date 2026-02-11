@@ -24,14 +24,14 @@ const Home = () => {
         </p>
       </div>
       <div class="techstack">
-        <p>React • JavaScript • Django • Pyhton • Git • GitHub</p>
+        <p>React • JavaScript • Django • Python • Git • GitHub</p>
       </div>
       <div class="container-overview">
         <a href="/projects">
-          <button class="aboutme">View Projects</button>
+          <button class="project-view">View Projects</button>
         </a>
         <a href="/PRAVEEN_RESUME.pdf" target="blank">
-          <button class="contactme">View Resume</button>
+          <button class="resume-view">View Resume</button>
         </a>
       </div>
       <div class="social-icons">

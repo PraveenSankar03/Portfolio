@@ -70,23 +70,7 @@
   transform: scale(1.1);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.aboutme {
+.project-view {
   text-decoration: none;
   width: 140px;
   padding: 12px 0;
@@ -97,13 +81,13 @@
   font-weight: bold;
 }
 
-.aboutme:hover {
+.project-view:hover {
   background-color: white;
   color: black;
   transition: background-color 0.5s ease;
 }
 
-.contactme {
+.resume-view {
   width: 140px;       
   padding: 12px 0;
   text-align: center;
@@ -113,11 +97,27 @@
   font-weight: bold;
 }
 
-.contactme:hover {
+.resume-view:hover {
   background-color: white;
   color: black;
   transition: background-color 0.5s ease;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .project-title {
   border: 1px solid white;
