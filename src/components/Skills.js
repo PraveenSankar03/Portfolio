@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import skills from "../data/skills.jsx";
 import "./Skills.css";
 
 const Skills = () => {
@@ -20,19 +19,19 @@ const Skills = () => {
           <h1 class="skill-topic">Frontend</h1>
           <div class="skill-flex">
             <div class='skill-card'>
-              <img src='react.png' class='skill-img'></img>
+              <img src='react.png' alt='react.png' class='skill-img'></img>
               <h4 class='skill-name'>React</h4>
             </div>
             <div class='skill-card'>
-              <img src='javascript.png' class='skill-img'></img>
+              <img src='javascript.png' alt='javascript.png' class='skill-img'></img>
               <h4 class='skill-name'>JavaScript</h4>
             </div>
             <div class='skill-card'>
-              <img src='html.png' class='skill-img'></img>
+              <img src='html.png' alt='html.png' class='skill-img'></img>
               <h4 class='skill-name'>HTML5</h4>
             </div>
             <div class='skill-card'>
-              <img src='css.png' class='skill-img-css'></img>
+              <img src='css.png' alt='css.png' class='skill-img-css'></img>
               <h4 class='skill-name'>CSS3</h4>
             </div>
           </div>
@@ -41,11 +40,11 @@ const Skills = () => {
           <h1 class="skill-topic">Backend</h1>
           <div class="skill-flex">
             <div class='skill-card'>
-              <img src='django.png' class='skill-img'></img>
+              <img src='django.png' alt='django.png' class='skill-img'></img>
               <h4 class='skill-name'>Django</h4>
             </div>
             <div class='skill-card'>
-              <img src='python.jpg' class='skill-img'></img>
+              <img src='python.jpg' alt='pyhton.jpg' class='skill-img'></img>
               <h4 class='skill-name'>Python</h4>
             </div>
           </div>
@@ -54,15 +53,15 @@ const Skills = () => {
           <h1 class="skill-topic">Tools</h1>
           <div class="skill-flex">
             <div class='skill-card'>
-              <img src='git.png' class='skill-img'></img>
+              <img src='git.png' alt='git.png' class='skill-img'></img>
               <h4 class='skill-name'>Git</h4>
             </div>
             <div class='skill-card'>
-              <img src='github.png' class='skill-img'></img>
+              <img src='github.png' alt='github.png' class='skill-img'></img>
               <h4 class='skill-name'>GitHub</h4>
             </div>
             <div class='skill-card'>
-              <img src='vscode.jpg' class='skill-img'></img>
+              <img src='vscode.jpg' alt='vscode.jpg' class='skill-img'></img>
               <h4 class='skill-name'>VS Code</h4>
             </div>
           </div>

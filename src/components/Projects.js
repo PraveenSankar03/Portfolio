@@ -17,7 +17,7 @@ const Projects = () => {
       </motion.h1>
       <div class='project-1'>
         <h1 class='project1-title'>Movie Browser Using React.js</h1>
-          <img class ='project-img' src='Moviebrowser.jpeg'></img>
+          <img class ='project-img' src='Moviebrowser.jpeg' alt='Moviebrowser.jpeg'></img>
         <p class='content'>
           <ul>
                 <li>
@@ -57,7 +57,7 @@ const Projects = () => {
       </div>
         <div class='project-2'>
           <h1 class='project2-title'>Social MicroBlogging Platform using Django.</h1>
-          <img class ='project-img' src='Opinions.jpeg'></img>
+          <img class ='project-img' src='Opinions.jpeg' alt='Opinions.jpeg'></img>
           <p class='content'>
             <ul>
                 <li>
