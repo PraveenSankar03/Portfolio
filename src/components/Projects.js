@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import "./Projects.css";
 
 const Projects = () => {
@@ -10,15 +11,14 @@ const Projects = () => {
         animate={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="hero-text"
-        class="topic"
+        className="hero-text topic"
       >
         Projects
       </motion.h1>
-      <div class='project-1'>
-        <h1 class='project1-title'>Movie Browser Using React.js</h1>
+      <div className='project-1'>
+        <h1 className='project1-title'>Movie Browser Using React.js</h1>
           <img class ='project-img' src='Moviebrowser.jpeg' alt='Moviebrowser.jpeg'></img>
-        <p class='content'>
+        <p className='content'>
           <ul>
                 <li>
                   Built a movie browser application using React to explore and
@@ -47,18 +47,18 @@ const Projects = () => {
               </ul>
               <h5>Tech Stack: React, JavaScript, HTML5.</h5>
         </p>
-        <div class='demo-button'>
-        <a href="https://movie-browser-using-reactjs.netlify.app/" target='blank'>
-          <button class='button'>Live Demo</button>
-        </a>
-        <a href="https://github.com/PraveenSankar03/Movie-Browser-using-React.js" target='blank'>
-          <button class='button'>GitHub</button>
-        </a>
+        <div className='demo-button'>
+        <Link to="https://movie-browser-using-reactjs.netlify.app/" target='blank'>
+          <button className='button'>Live Demo</button>
+        </Link>
+        <Link to="https://github.com/PraveenSankar03/Movie-Browser-using-React.js" target='blank'>
+          <button className='button'>GitHub</button>
+        </Link>
       </div>
-        <div class='project-2'>
-          <h1 class='project2-title'>Social MicroBlogging Platform using Django.</h1>
+        <div className='project-2'>
+          <h1 className='project2-title'>Social MicroBlogging Platform using Django.</h1>
           <img class ='project-img' src='Opinions.jpeg' alt='Opinions.jpeg'></img>
-          <p class='content'>
+          <p className='content'>
             <ul>
                 <li>
                   Developed a lightweight social media application that allows
@@ -91,17 +91,17 @@ const Projects = () => {
               </ul>
               <h5>Tech Stack: Django, Python, JavaScript.</h5>
           </p>
-          <div class='demo-button'>
-            <a href="https://github.com/PraveenSankar03/django-social-media" target='blank'>
-              <button class='button'>GitHub</button>
-            </a>
+          <div className='demo-button'>
+            <Link to="https://github.com/PraveenSankar03/django-social-media" target='blank'>
+              <button className='button'>GitHub</button>
+            </Link>
           </div>
         </div>
       </div>
-      <div class='back-button'>
-        <a href='/'>
-            <button class='button'>Back to Overview</button>
-        </a>
+      <div className='back-button'>
+        <Link to='/'>
+            <button className='button'>Back to Overview</button>
+        </Link>
       </div>
     </div>
   )

@@ -1,4 +1,5 @@
 import './About.css';
+import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 
 const AboutView = () => {
@@ -10,23 +11,22 @@ const AboutView = () => {
         animate={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="hero-text"
-        class="topic"
+        className="hero-text topic"
       >
         About Me
       </motion.h1>
-      <div class='basic'>
-        <h1 class='basic-topic'>Basic Information</h1>
-        <p class='content'>
+      <div className='basic'>
+        <h1 className='basic-topic'>Basic Information</h1>
+        <p className='content'>
           Name: Praveen Kumar S<br></br>
           Location: Chennai, Tamil Nadu.<br></br>
           Degree: B.Tech Biomedical Engineering.<br></br>
           Role: Full Stack Developer (React + Django).
         </p>
       </div>
-      <div class="summary">
-        <h1 class="summary-topic">Summary:</h1>
-        <p class="content">
+      <div className="summary">
+        <h1 className="summary-topic">Summary:</h1>
+        <p className="content">
           I am a Full Stack Developer with a B.Tech in Biomedical Engineering,
           combining strong analytical problem-solving skills with practical
           software development experience.
@@ -39,22 +39,22 @@ const AboutView = () => {
           strengthening my technical expertise in modern web technologies.
         </p>
       </div>
-      <div class='education'>
-        <h1 class='education-topic'>Education</h1>
-        <h4 class='education-clg'>B.Tech Biomedical Engineering.</h4>
-        <p class='content'>Dr. M.G.R. Educational and Research Institute. Chennai, Tamil Nadu.</p>
-        <p class='content'>2021-2025 | CGPA: 8.4</p>
+      <div className='education'>
+        <h1 className='education-topic'>Education</h1>
+        <h4 className='education-clg'>B.Tech Biomedical Engineering.</h4>
+        <p className='content'>Dr. M.G.R. Educational and Research Institute. Chennai, Tamil Nadu.</p>
+        <p className='content'>2021-2025 | CGPA: 8.4</p>
       </div>
-      <div class='transition'>
-        <h1 class='transition-topic'>Transition</h1>
-        <p class='content'>
+      <div className='transition'>
+        <h1 className='transition-topic'>Transition</h1>
+        <p className='content'>
            During my undergraduate studies in Biomedical Engineering, I developed a strong interest in programming and system design. Working on technical projects exposed me to software development, which led me to pursue full-stack development more seriously. Built full-stack applications using React and Django. Developed REST APIs, implemented authentication systems, and worked with databases.
         </p>
       </div>
-      <div class='back-button'>
-        <a href='/'>
-            <button class='button'>Back to Overview</button>
-        </a>
+      <div className='back-button'>
+        <Link to='/'>
+            <button className='button'>Back to Overview</button>
+        </Link>
       </div>
     </div>
   )
