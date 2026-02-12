@@ -11,7 +11,7 @@ const Home = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="hero-text"
-          class="topic"
+          class="name-topic"
         >
           Hi, I'm Praveen Kumar.
         </motion.h1>
