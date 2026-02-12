@@ -17,21 +17,17 @@
 }
 
 .container-bio {
-  display: flex;
-  height: 90px;
-  width: 800px;
-  margin: auto;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .bio {
   font-family: "Montserrat", cursive;
-  font-optical-sizing: auto;
-  font-style: normal;
-  text-align: center;
   font-weight: bold;
-  font-size: 20px;
-  display: flex;
-  flex-wrap: wrap;
+  font-size: clamp(16px, 4vw, 20px);
+  text-align: center;
 }
 
 .techstack {
