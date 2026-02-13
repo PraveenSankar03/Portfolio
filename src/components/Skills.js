@@ -19,7 +19,7 @@ const Skills = () => {
           <h1 className="skill-topic">Frontend</h1>
           <div className="skill-flex">
             <div className='skill-card'>
-              <img src='react.png' alt='react.png' className='skill-img'></img>
+              <img src='react.png' alt='react.png' className='skill-img'/>
               <h4 className='skill-name'>React</h4>
               <ul>
                 <li>Hooks (UseState, UseEffect)</li>
@@ -29,7 +29,7 @@ const Skills = () => {
               </ul>
             </div>
             <div className='skill-card'>
-              <img src='javascript.png' alt='javascript.png' className='skill-img'></img>
+              <img src='javascript.png' alt='javascript.png' className='skill-img'/>
               <h4 className='skill-name'>JavaScript</h4>
               <ul>
                 <li>ES6+</li>
@@ -39,7 +39,7 @@ const Skills = () => {
               </ul>
             </div>
             <div className='skill-card'>
-              <img src='jquery.png' alt='jquery.png' className='skill-img'></img>
+              <img src='jquery.png' alt='jquery.png' className='skill-img'/>
               <h4 className='skill-name'>jquery</h4>
               <ul>
                 <li>DOM Manipulation</li>
@@ -49,7 +49,7 @@ const Skills = () => {
               </ul>
             </div>
             <div className='skill-card'>
-              <img src='html.png' alt='html.png' className='skill-img'></img>
+              <img src='html.png' alt='html.png' className='skill-img'/>
               <h4 className='skill-name'>HTML5</h4>
               <ul>
                 <li>Forms & Input Types</li>
@@ -58,7 +58,7 @@ const Skills = () => {
               </ul>
             </div>
             <div className='skill-card'>
-              <img src='css.png' alt='css.png' className='skill-img-css'></img>
+              <img src='css.png' alt='css.png' className='skill-img-css'/>
               <h4 className='skill-name'>CSS3</h4>
               <ul>
                 <li>Responsive Design</li>
@@ -73,7 +73,7 @@ const Skills = () => {
           <h1 className="skill-topic">Backend</h1>
           <div className="skill-flex">
             <div className='skill-card'>
-              <img src='django.png' alt='django.png' className='skill-img'></img>
+              <img src='django.png' alt='django.png' className='skill-img'/>
               <h4 className='skill-name'>Django</h4>
               <ul>
                 <li>MTV Architecture</li>
@@ -83,7 +83,7 @@ const Skills = () => {
               </ul>
             </div>
             <div className='skill-card'>
-              <img src='python.jpg' alt='pyhton.jpg' className='skill-img'></img>
+              <img src='python.jpg' alt='pyhton.jpg' className='skill-img'/>
               <h4 className='skill-name'>Python</h4>
               <ul>
                 <li>Object-Oriented Programming</li>
@@ -98,7 +98,7 @@ const Skills = () => {
           <h1 className="skill-topic">Tools</h1>
           <div className="skill-flex">
             <div className='skill-card'>
-              <img src='git.png' alt='git.png' className='skill-img'></img>
+              <img src='git.png' alt='git.png' className='skill-img'/>
               <h4 className='skill-name'>Git</h4>
               <ul>
                 <li>Version Control</li>
@@ -107,7 +107,7 @@ const Skills = () => {
               </ul>
             </div>
             <div className='skill-card'>
-              <img src='github.png' alt='github.png' className='skill-img'></img>
+              <img src='github.png' alt='github.png' className='skill-img'/>
               <h4 className='skill-name'>GitHub</h4>
               <ul>
                 <li>Repository Management</li>
@@ -116,7 +116,7 @@ const Skills = () => {
               </ul>
             </div>
             <div className='skill-card'>
-              <img src='vscode.jpg' alt='vscode.jpg' className='skill-img'></img>
+              <img src='vscode.jpg' alt='vscode.jpg' className='skill-img'/>
               <h4 className='skill-name'>VS Code</h4>
               <ul>
                 <li>Extensions & Debugging</li>
