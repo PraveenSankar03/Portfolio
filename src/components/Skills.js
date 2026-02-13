@@ -40,7 +40,7 @@ const Skills = () => {
             </div>
             <div className='skill-card'>
               <img src='jquery.png' alt='jquery.png' className='skill-img'/>
-              <h4 className='skill-name'>jquery</h4>
+              <h4 className='skill-name'>jQuery</h4>
               <ul>
                 <li>DOM Manipulation</li>
                 <li>Event Handling</li>
@@ -65,6 +65,16 @@ const Skills = () => {
                 <li>Media Queries</li>
                 <li>Flexbox</li>
                 <li>Grid</li>
+              </ul>
+            </div>
+            <div className='skill-card'>
+              <img src='bootstrap.png' alt='bootstrap.png' className='skill-img'/>
+              <h4 className='skill-name'>Bootstrap 5</h4>
+              <ul>
+                <li>Responsive grid system</li>
+                <li>Prebuilt UI components</li>
+                <li>Custom theme overrides</li>
+                <li>Mobile-first design</li>
               </ul>
             </div>
           </div>
