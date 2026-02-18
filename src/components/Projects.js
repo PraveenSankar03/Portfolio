@@ -48,7 +48,7 @@ const Projects = () => {
               <h5>Tech Stack: React, JavaScript, HTML5.</h5>
         </p>
         <div className='demo-button'>
-        <Link to="https://movie-browser-using-reactjs.netlify.app/" target='blank'>
+        <Link to="https://movie-browser-using-react-js.vercel.app/" target='blank'>
           <button className='button'>Live Demo</button>
         </Link>
         <Link to="https://github.com/PraveenSankar03/Movie-Browser-using-React.js" target='blank'>
