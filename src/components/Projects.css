@@ -18,11 +18,19 @@
 }
 
 .project-img {
+  border: 2px solid black;
   height:500px;
   width: 80%;
   display: block;
   margin: 0 auto;
-  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.box-content {
+  border: 1px solid white;
+  height: 350px;
+  width: 80%;
+  margin: auto;
 }
 
 .content {
