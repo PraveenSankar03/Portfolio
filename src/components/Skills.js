@@ -104,6 +104,21 @@ const Skills = () => {
             </div>
           </div>
         </div>
+        <div className="CMS">
+          <h1 className="skill-topic">Content Management System (CMS).</h1>
+          <div className="skill-flex">
+            <div className='skill-card'>
+              <img src='wagtail.png' alt='wagtail.png' className='skill-img'/>
+              <h4 className='skill-name'>Wagtail</h4>
+              <ul>
+                <li>Custom Page Models</li>
+                <li>Media Management</li>
+                <li>Powerful Admin UI</li>
+                <li>Reusable Content</li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div className="tools">
           <h1 className="skill-topic">Tools</h1>
           <div className="skill-flex">

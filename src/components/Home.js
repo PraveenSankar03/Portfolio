@@ -28,10 +28,10 @@ const Home = () => {
       </div>
       <div className="container-overview">
         <Link to="/projects">
-          <button className="project-view">View Projects</button>
+          <button className="more-view">View Projects</button>
         </Link>
         <Link to="/PRAVEEN_RESUME.pdf" target="blank">
-          <button className="resume-view">View Resume</button>
+          <button className="more-view">View Resume</button>
         </Link>
       </div>
       <div className="social-icons">

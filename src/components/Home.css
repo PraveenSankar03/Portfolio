@@ -68,8 +68,8 @@
   transform: scale(1.1);
 }
 
-.project-view {
-  text-decoration: none;
+.more-view {
+  border: 2px solid black;
   width: 140px;
   padding: 12px 0;
   text-align: center;
@@ -79,23 +79,7 @@
   font-weight: bold;
 }
 
-.project-view:hover {
-  background-color: white;
-  color: black;
-  transition: background-color 0.5s ease;
-}
-
-.resume-view {
-  width: 140px;       
-  padding: 12px 0;
-  text-align: center;
-  background: black;
-  color: white;
-  border-radius: 999px;
-  font-weight: bold;
-}
-
-.resume-view:hover {
+.more-view:hover {
   background-color: white;
   color: black;
   transition: background-color 0.5s ease;
