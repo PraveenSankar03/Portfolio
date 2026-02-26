@@ -24,8 +24,9 @@ const AboutView = () => {
           Role: Full Stack Developer (React + Django).
         </p>
       </div>
+
       <div className="summary">
-        <h1 className="summary-topic">Summary:</h1>
+        <h1 className="basic-topic">Summary</h1>
         <p className="content">
           I am a Full Stack Developer with a B.Tech in Biomedical Engineering,
           combining strong analytical problem-solving skills with practical
@@ -39,18 +40,34 @@ const AboutView = () => {
           strengthening my technical expertise in modern web technologies.
         </p>
       </div>
+      
       <div className='education'>
-        <h1 className='education-topic'>Education</h1>
+        <h1 className='basic-topic'>Education</h1>
         <h4 className='education-clg'>B.Tech Biomedical Engineering.</h4>
-        <p className='content'>Dr. M.G.R. Educational and Research Institute. Chennai, Tamil Nadu.</p>
-        <p className='content'>2021-2025 | CGPA: 8.4</p>
+        <div className='content'>
+          <p>Dr. M.G.R. Educational and Research Institute. Chennai, Tamil Nadu.</p>
+          <p>2021-2025 | CGPA: 8.4</p>
+        </div>
       </div>
+
       <div className='transition'>
-        <h1 className='transition-topic'>Transition</h1>
+        <h1 className='basic-topic'>Transition ?</h1>
         <p className='content'>
-           During my undergraduate studies in Biomedical Engineering, I developed a strong interest in programming and system design. Working on technical projects exposed me to software development, which led me to pursue full-stack development more seriously. Built full-stack applications using React and Django. Developed REST APIs, implemented authentication systems, and worked with databases.
+          <ul>
+            <li>
+              During my undergraduate studies in Biomedical Engineering, I developed a strong interest in programming and system design.
+            </li>
+            <li>
+              Working on technical projects exposed me to software development, which led me to pursue full-stack development more seriously.
+            </li>
+            <li>
+               Built full-stack applications using React and Django. Developed REST APIs, implemented authentication systems, and worked with databases.
+            </li>
+          </ul>
+            
         </p>
       </div>
+
       <div className='back-button'>
         <Link to='/'>
             <button className='button'>Back to Overview</button>

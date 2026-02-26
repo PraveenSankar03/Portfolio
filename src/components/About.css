@@ -11,7 +11,8 @@
 .basic-topic {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    padding: 20px;
+    padding-left: 40px;
+    padding-bottom: 10px;
 }
 
 .content {
@@ -20,29 +21,13 @@
     font-weight: 400px;
     font-size: 20px;
     padding-left: 40px;
+    padding-bottom: 20px;
 }
 
-.summary-topic {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    padding: 20px;
-}
-
-.education-topic {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    padding: 20px;
-}
 
 .education-clg {
     font-family: "Montserrat", cursive;
     padding-left: 40px;
-}
-
-.transition-topic {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    padding: 20px;
 }
 
 .back-button {
