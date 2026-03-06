@@ -1,0 +1,459 @@
+.topic{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.basic-topic {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+.content {
+    font-family: "Montserrat", cursive;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 20px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+
+.education-clg {
+    font-family: "Montserrat", cursive;
+    padding-left: 40px;
+}
+
+.back-button {
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.button {
+    border: 2px solid black;
+    width: 170px;
+    padding: 12px 0;
+    text-align: center;
+    background: black;
+    color: white;
+    border-radius: 999px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s ease;
+
+}
+
+.name-topic {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sub-hero {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.container-bio {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.bio {
+  font-family: "Montserrat", cursive;
+  font-weight: bold;
+  font-size: clamp(16px, 4vw, 20px);
+  text-align: center;
+}
+
+.techstack {
+  font-family: "Montserrat", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.container-overview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  font-size: 30px;
+  padding-top: 30px;
+}
+
+.social-icons a {
+  color: black;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0077ff;
+  transform: scale(1.1);
+}
+
+.more-view {
+  border: 2px solid black;
+  width: 140px;
+  padding: 12px 0;
+  text-align: center;
+  background: black;
+  color: white;
+  border-radius: 999px;
+  font-weight: bold;
+}
+
+.more-view:hover {
+  background-color: white;
+  color: black;
+  transition: background-color 0.5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.project-title {
+  border: 1px solid white;
+  height: 80px;
+  padding: 5px;
+  background-color: white;
+  color: black;
+  font-family:"Outfit", sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.skills-title {
+  height: 80px;
+  padding: 5px;
+  color: black;
+  font-family:"Outfit", sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.pro-card {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-project {
+  margin-top: 20px;
+  padding-bottom: 15px;
+}
+
+.card-title {
+  padding: 15px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.project-cards {
+  padding-top: 10px;
+}
+
+.project-intro {
+  font-family: "Caveat", cursive;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 25px;
+}
+
+.demo {
+  background-color: black;
+  color: white;
+}
+
+.skill-card {
+  width: 18rem
+}
+
+.container-skills {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 160px);
+  gap: 40px;
+  justify-content: center;
+}
+
+.skill-pic {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.8s;
+}
+
+.skill-pic:hover {
+  height: 200px;
+}
+
+.skill-pic img {
+  height: 100%;
+  width: auto;      
+  object-fit: contain;
+  background-color: white;
+  transition: all 0.6s;
+}
+
+.skill-pic span {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.container-contact {
+  padding-top: 30px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.contact {
+  border: 1px solid white;
+  text-align: center;
+}
+
+.icon-contact {
+  font-size: 50px;
+  text-align: center;
+  margin: auto;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .container-skills {
+    grid-template-columns: repeat(2, 120px);
+  }
+}
+
+@media (max-width: 480px) {
+  .container-skills {
+    grid-template-columns: repeat(1, 120px);
+  }
+}
+
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.error {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.topic{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.project1-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.project-img {
+  border: 2px solid black;
+  height:500px;
+  width: 85%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.box-content {
+  border: 1px solid white;
+  height: 350px;
+  width: 80%;
+  margin: auto;
+}
+
+.content {
+    font-family: "Montserrat", cursive;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 20px;
+    padding-left: 40px;
+}
+
+.demo-button {
+  display: flex;
+  gap: 25px;
+  width: fit-content;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.button {
+    text-decoration: none;
+    width: 170px;
+    padding: 12px 0;
+    background: black;
+    color: white;
+    border-radius: 999px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s ease;
+}
+
+.project2-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.back-button {
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.topic {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.skill-topic {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.skill-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-left: 15px;
+}
+
+.skill-card {
+  height: 350px;
+  width: 230px;
+}
+
+.skill-img {
+  height: 160px;
+  width: 180px;
+}
+
+.skill-name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding-left: 40px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.skill-img-css {
+  width: 140px;
+  height: 160px;
+}
+
+.back-button {
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.button {
+  border: 2px solid black;
+    width: 170px;
+    padding: 12px 0;
+    background: black;
+    color: white;
+    border-radius: 999px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s ease;
+}

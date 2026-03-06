@@ -1,4 +1,4 @@
-import "./Home.css";
+import "./style.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaGithub, FaEnvelope } from "react-icons/fa";
