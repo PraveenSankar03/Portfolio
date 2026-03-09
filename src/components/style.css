@@ -1,4 +1,4 @@
-.topic{
+.topic {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -9,49 +9,47 @@
 }
 
 .basic-topic {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    padding-left: 40px;
-    padding-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding-left: 40px;
+  padding-bottom: 10px;
 }
 
 .content {
-    font-family: "Montserrat", cursive;
-    font-style: normal;
-    font-weight: 400px;
-    font-size: 20px;
-    padding-left: 40px;
-    padding-bottom: 20px;
+  font-family: "Montserrat", cursive;
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 20px;
+  padding-left: 40px;
+  padding-bottom: 20px;
 }
 
-
 .education-clg {
-    font-family: "Montserrat", cursive;
-    padding-left: 40px;
+  font-family: "Montserrat", cursive;
+  padding-left: 40px;
 }
 
 .back-button {
-    padding-top: 40px;
-    text-align: center;
-    padding-bottom: 40px;
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 40px;
 }
 
 .button {
-    border: 2px solid black;
-    width: 170px;
-    padding: 12px 0;
-    text-align: center;
-    background: black;
-    color: white;
-    border-radius: 999px;
-    font-weight: bold;
+  border: 2px solid black;
+  width: 170px;
+  padding: 12px 0;
+  text-align: center;
+  background: black;
+  color: white;
+  border-radius: 999px;
+  font-weight: bold;
 }
 
 .button:hover {
-    background-color: white;
-    color: black;
-    transition: background-color 0.5s ease;
-
+  background-color: white;
+  color: black;
+  transition: background-color 0.5s ease;
 }
 
 .name-topic {
@@ -141,29 +139,13 @@
   transition: background-color 0.5s ease;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .project-title {
   border: 1px solid white;
   height: 80px;
   padding: 5px;
   background-color: white;
   color: black;
-  font-family:"Outfit", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: bold;
   font-size: 50px;
   text-align: center;
@@ -174,7 +156,7 @@
   height: 80px;
   padding: 5px;
   color: black;
-  font-family:"Outfit", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: bold;
   font-size: 50px;
   text-align: center;
@@ -217,7 +199,7 @@
 }
 
 .skill-card {
-  width: 18rem
+  width: 18rem;
 }
 
 .container-skills {
@@ -244,7 +226,7 @@
 
 .skill-pic img {
   height: 100%;
-  width: auto;      
+  width: auto;
   object-fit: contain;
   background-color: white;
   transition: all 0.6s;
@@ -306,7 +288,7 @@
   margin-top: 60px;
 }
 
-.topic{
+.topic {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -327,7 +309,7 @@
 
 .project-img {
   border: 2px solid black;
-  height:500px;
+  height: 500px;
   width: 85%;
   display: block;
   margin: 0 auto;
@@ -342,11 +324,11 @@
 }
 
 .content {
-    font-family: "Montserrat", cursive;
-    font-style: normal;
-    font-weight: 400px;
-    font-size: 20px;
-    padding-left: 40px;
+  font-family: "Montserrat", cursive;
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 20px;
+  padding-left: 40px;
 }
 
 .demo-button {
@@ -359,19 +341,19 @@
 }
 
 .button {
-    text-decoration: none;
-    width: 170px;
-    padding: 12px 0;
-    background: black;
-    color: white;
-    border-radius: 999px;
-    font-weight: bold;
+  text-decoration: none;
+  width: 170px;
+  padding: 12px 0;
+  background: black;
+  color: white;
+  border-radius: 999px;
+  font-weight: bold;
 }
 
 .button:hover {
-    background-color: white;
-    color: black;
-    transition: background-color 0.5s ease;
+  background-color: white;
+  color: black;
+  transition: background-color 0.5s ease;
 }
 
 .project2-title {
@@ -383,19 +365,19 @@
 }
 
 .back-button {
-    padding-top: 40px;
-    text-align: center;
-    padding-bottom: 40px;
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 40px;
 }
 
 .topic {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 45px;
-    text-align: center;
-    margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .skill-topic {
@@ -437,23 +419,23 @@
 }
 
 .back-button {
-    padding-top: 100px;
-    text-align: center;
-    padding-bottom: 40px;
+  padding-top: 100px;
+  text-align: center;
+  padding-bottom: 40px;
 }
 
 .button {
   border: 2px solid black;
-    width: 170px;
-    padding: 12px 0;
-    background: black;
-    color: white;
-    border-radius: 999px;
-    font-weight: bold;
+  width: 170px;
+  padding: 12px 0;
+  background: black;
+  color: white;
+  border-radius: 999px;
+  font-weight: bold;
 }
 
 .button:hover {
-    background-color: white;
-    color: black;
-    transition: background-color 0.5s ease;
+  background-color: white;
+  color: black;
+  transition: background-color 0.5s ease;
 }

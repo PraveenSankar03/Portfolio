@@ -114,7 +114,7 @@ const Projects = () => {
         </div>
         <div className="project-2">
           <h1 className="project2-title">
-            Simple Weather Fetcher using React.js
+            Weather Fetcher using React.js
           </h1>
           <img
             class="project-img"
