@@ -4,159 +4,106 @@ import "./style.css";
 
 const Skills = () => {
   return (
-    <div>
-      <motion.h1
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="hero-text topic"
-      >
-        Technologies I work with,
-      </motion.h1>
-      <div className="skill-container">
-        <div className="frontend">
-          <h1 className="skill-topic">Frontend</h1>
-          <div className="skill-flex">
-            <div className='skill-card'>
-              <img src='react.png' alt='react.png' className='skill-img'/>
-              <h4 className='skill-name'>React</h4>
-              <ul>
-                <li>Hooks (UseState, UseEffect)</li>
-                <li>Functional Components</li>
-                <li>Props and State</li>
-                <li>API integration</li>
-              </ul>
+    <div className="skills-wrapper">
+      <div className="container">
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="skills-title"
+        >
+          Technologies I Work With
+        </motion.h1>
+
+        {/* FRONTEND */}
+        <div className="skills-section">
+          <h2>Frontend</h2>
+          <div className="skills-grid">
+            <div className="skill-item">
+              <img src="react.png" alt="React" />
+              <span>React</span>
             </div>
-            <div className='skill-card'>
-              <img src='javascript.png' alt='javascript.png' className='skill-img'/>
-              <h4 className='skill-name'>JavaScript</h4>
-              <ul>
-                <li>ES6+</li>
-                <li>DOM manipulation</li>
-                <li>Closures</li>
-                <li>Ajaxing</li>
-              </ul>
+
+            <div className="skill-item">
+              <img src="javascript.png" alt="JavaScript" />
+              <span>JavaScript</span>
             </div>
-            <div className='skill-card'>
-              <img src='jquery.png' alt='jquery.png' className='skill-img'/>
-              <h4 className='skill-name'>jQuery</h4>
-              <ul>
-                <li>DOM Manipulation</li>
-                <li>Event Handling</li>
-                <li>Animations & Effects</li>
-                <li>Form Validation</li>
-              </ul>
+
+            <div className="skill-item">
+              <img src="jquery.png" alt="jQuery" />
+              <span>jQuery</span>
             </div>
-            <div className='skill-card'>
-              <img src='html.png' alt='html.png' className='skill-img'/>
-              <h4 className='skill-name'>HTML5</h4>
-              <ul>
-                <li>Forms & Input Types</li>
-                <li>Semantic Markup</li>
-                <li>Multimedia Integration</li>
-              </ul>
+
+            <div className="skill-item">
+              <img src="html.png" alt="HTML5" />
+              <span>HTML5</span>
             </div>
-            <div className='skill-card'>
-              <img src='css.png' alt='css.png' className='skill-img-css'/>
-              <h4 className='skill-name'>CSS3</h4>
-              <ul>
-                <li>Responsive Design</li>
-                <li>Media Queries</li>
-                <li>Flexbox</li>
-                <li>Grid</li>
-              </ul>
+
+            <div className="skill-item">
+              <img src="css.png" alt="CSS3" />
+              <span>CSS3</span>
             </div>
-            <div className='skill-card'>
-              <img src='bootstrap.png' alt='bootstrap.png' className='skill-img'/>
-              <h4 className='skill-name'>Bootstrap 5</h4>
-              <ul>
-                <li>Responsive grid system</li>
-                <li>Prebuilt UI components</li>
-                <li>Custom theme overrides</li>
-                <li>Mobile-first design</li>
-              </ul>
+
+            <div className="skill-item">
+              <img src="bootstrap.png" alt="Bootstrap" />
+              <span>Bootstrap</span>
             </div>
           </div>
         </div>
-        <div className="backend">
-          <h1 className="skill-topic">Backend</h1>
-          <div className="skill-flex">
-            <div className='skill-card'>
-              <img src='django.png' alt='django.png' className='skill-img'/>
-              <h4 className='skill-name'>Django</h4>
-              <ul>
-                <li>MTV Architecture</li>
-                <li>Authentication System</li>
-                <li>Admin Panel</li>
-                <li>URL Routing</li>
-              </ul>
+
+        {/* BACKEND */}
+        <div className="skills-section">
+          <h2>Backend</h2>
+          <div className="skills-grid">
+            <div className="skill-item">
+              <img src="django.png" alt="Django" />
+              <span>Django</span>
             </div>
-            <div className='skill-card'>
-              <img src='python.jpg' alt='pyhton.jpg' className='skill-img'/>
-              <h4 className='skill-name'>Python</h4>
-              <ul>
-                <li>Object-Oriented Programming</li>
-                <li>Data Structures</li>
-                <li>File Handling</li>
-                <li>Virtual Environments (venv)</li>
-              </ul>
+
+            <div className="skill-item">
+              <img src="python.jpg" alt="Python" />
+              <span>Python</span>
             </div>
           </div>
         </div>
-        <div className="CMS">
-          <h1 className="skill-topic">Content Management System (CMS).</h1>
-          <div className="skill-flex">
-            <div className='skill-card'>
-              <img src='wagtail.png' alt='wagtail.png' className='skill-img'/>
-              <h4 className='skill-name'>Wagtail</h4>
-              <ul>
-                <li>Custom Page Models</li>
-                <li>Media Management</li>
-                <li>Powerful Admin UI</li>
-                <li>Reusable Content</li>
-              </ul>
+
+        {/* CMS */}
+        <div className="skills-section">
+          <h2>CMS</h2>
+          <div className="skills-grid">
+            <div className="skill-item">
+              <img src="wagtail.png" alt="Wagtail" />
+              <span>Wagtail</span>
             </div>
           </div>
         </div>
-        <div className="tools">
-          <h1 className="skill-topic">Tools</h1>
-          <div className="skill-flex">
-            <div className='skill-card'>
-              <img src='git.png' alt='git.png' className='skill-img'/>
-              <h4 className='skill-name'>Git</h4>
-              <ul>
-                <li>Version Control</li>
-                <li>Branching & Merging</li>
-                <li>Pull Requests</li>
-              </ul>
+
+        {/* TOOLS */}
+        <div className="skills-section">
+          <h2>Tools</h2>
+          <div className="skills-grid">
+            <div className="skill-item">
+              <img src="git.png" alt="Git" />
+              <span>Git</span>
             </div>
-            <div className='skill-card'>
-              <img src='github.png' alt='github.png' className='skill-img'/>
-              <h4 className='skill-name'>GitHub</h4>
-              <ul>
-                <li>Repository Management</li>
-                <li>README Documentation</li>
-                <li>Issue Tracking</li>
-              </ul>
+
+            <div className="skill-item">
+              <img src="github.png" alt="GitHub" />
+              <span>GitHub</span>
             </div>
-            <div className='skill-card'>
-              <img src='vscode.jpg' alt='vscode.jpg' className='skill-img'/>
-              <h4 className='skill-name'>VS Code</h4>
-              <ul>
-                <li>Extensions & Debugging</li>
-                <li>Git Integration</li>
-                <li>Code Formatting</li>
-                <li>Integrated Terminal</li>
-              </ul>
+
+            <div className="skill-item">
+              <img src="vscode.jpg" alt="VS Code" />
+              <span>VS Code</span>
             </div>
           </div>
         </div>
-      </div>
-      <div className='back-button'>
-        <Link to='/'>
-            <button className='button'>Back to Overview</button>
-        </Link>
+
+        <div className="back-button">
+          <Link to="/">
+            <button className="primary-btn">Back to Overview</button>
+          </Link>
+        </div>
       </div>
     </div>
   );

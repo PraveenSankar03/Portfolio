@@ -6,25 +6,24 @@ const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   const toggleTheme = () => {
-    setDarkMode(prev => !prev);
+    setDarkMode((prev) => !prev);
   };
 
   useEffect(() => {
-    if (darkMode) {
-      document.body.setAttribute("data-bs-theme", "dark");
-    } else {
-      document.body.setAttribute("data-bs-theme", "light");
-    }
+    document.body.setAttribute("data-bs-theme", darkMode ? "dark" : "light");
   }, [darkMode]);
 
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
-      <div className="container-fluid">
+    <nav className="navbar navbar-expand-lg premium-navbar sticky-top">
+      <div className="container-fluid px-4">
+        {/* LEFT */}
         <Link className="navbar-brand" to="/">
           MY PORTFOLIO
         </Link>
+
+        {/* TOGGLER */}
         <button
-          className="navbar-toggler"
+          className="navbar-toggler border-0 shadow-none"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -32,16 +31,20 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
+        {/* RIGHT */}
+        <div
+          className="collapse navbar-collapse justify-content-end align-items-center"
+          id="navbarNav"
+        >
+          <ul className="navbar-nav align-items-lg-center">
             <li className="nav-item">
-              <Link className="nav-link active" to="/">
+              <Link className="nav-link" to="/">
                 Overview
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/about">
-                About me
+                About
               </Link>
             </li>
             <li className="nav-item">
@@ -49,14 +52,15 @@ const Navbar = () => {
                 Skills
               </Link>
             </li>
-            <button
-              type="button"
-              className="btn btn-outline-secondary ms-3"
-              onClick={toggleTheme}
-            >
-              {darkMode ? "Light mode" : "Dark mode"}
-            </button>
           </ul>
+
+          <button
+            type="button"
+            className="theme-btn ms-lg-4 mt-3 mt-lg-0"
+            onClick={toggleTheme}
+          >
+            {darkMode ? "Light" : "Dark"}
+          </button>
         </div>
       </div>
     </nav>

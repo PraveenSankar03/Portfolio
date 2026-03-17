@@ -5,45 +5,82 @@ import { FaGithub, FaEnvelope } from "react-icons/fa";
 
 const Home = () => {
   return (
-    <div className="grad-bg">
-      <header className="p-4 hero-container">
+    <div className="home-wrapper">
+      <div className="hero container text-center">
         <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="hero-title"
+        >
+          Hi, I'm <span>Praveen Kumar</span>
+        </motion.h1>
+
+        <motion.p
+          className="hero-subtitle"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+        >
+          Fullstack Developer
+        </motion.p>
+
+        <motion.p
+          className="hero-description"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+        >
+          I build responsive, scalable web applications using
+          <strong> React</strong> and <strong> Django</strong> with clean,
+          modern UI and performance in mind.
+        </motion.p>
+
+        <motion.p
+          className="tech-stack"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.7 }}
+        >
+          React • JavaScript • Django • Python • Git • GitHub
+        </motion.p>
+
+        <motion.div
+          className="hero-buttons"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="hero-text name-topic"
+          transition={{ delay: 0.9 }}
         >
-          Hi, I'm Praveen Kumar.
-        </motion.h1>
-        <div className="sub-hero">Fullstack Developer</div>
-      </header>
-      <div className="container-bio">
-        <p className="bio">
-          A Fullstack Developer specializing in React and Django. I build
-          responsive, scalable web applications with clean UI.
-        </p>
-      </div>
-      <div className="techstack">
-        <p>React • JavaScript • Django • Python • Git • GitHub</p>
-      </div>
-      <div className="container-overview">
-        <Link to="/projects">
-          <button className="more-view">View Projects</button>
-        </Link>
-        <Link to="/PRAVEEN_RESUME.pdf" target="blank">
-          <button className="more-view">View Resume</button>
-        </Link>
-      </div>
-      <div className="social-icons">
-          <Link to="https://github.com/PraveenSankar03"
-          target='blank'>
+          <Link to="/projects">
+            <button className="primary-btn">View Projects</button>
+          </Link>
+
+          <a href="/PRAVEEN_RESUME.pdf" target="_blank" rel="noreferrer">
+            <button className="secondary-btn">View Resume</button>
+          </a>
+        </motion.div>
+
+        <motion.div
+          className="social-links"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.1 }}
+        >
+          <a
+            href="https://github.com/PraveenSankar03"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaGithub />
-          </Link>
-          <Link to="mailto:praveensankar3333@gmail.com">
+          </a>
+
+          <a href="mailto:praveensankar3333@gmail.com">
             <FaEnvelope />
-          </Link>
-        </div>
+          </a>
+        </motion.div>
+      </div>
     </div>
   );
 };
+
 export default Home;
