@@ -13,7 +13,7 @@ const Home = () => {
           transition={{ duration: 0.7 }}
           className="hero-title"
         >
-          Hi, I'm <span>Praveen Kumar</span>
+          Hi, I'm <span class='name'>Praveen Kumar</span>
         </motion.h1>
 
         <motion.p

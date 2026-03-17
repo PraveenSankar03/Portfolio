@@ -15,25 +15,60 @@ const Projects = () => {
           Projects
         </motion.h1>
 
-        {/* PROJECT 1 */}
-        <div className="project-showcase">
+        <div className="project-showcase reverse">
           <div className="project-text">
-            <h2>Movie Browser</h2>
+            <h2>AI Code Explainer</h2>
 
             <p>
-              A dynamic movie exploration app powered by real-time API data.
-              Users can browse, search, and view detailed information about
-              movies with a smooth and responsive UI.
+              An AI powerd web application designed to help
+              programmers understand unfamiliar code quickly.
             </p>
 
             <ul>
-              <li>TMDB API integration</li>
-              <li>Real-time movie data</li>
-              <li>Clean UI & responsive design</li>
-              <li>Component-based architecture</li>
+              <li>AI-powered system that explains the code with step-by-step outputs.</li>
+              <li>Built REST API backend and Django REST Framework for code processing.</li>
+              <li>Built React frontend for real-time code input and explanation display.</li>
+              <li>Integrated Gemini API securely using environment variables.</li>
             </ul>
 
-            <span className="tech">React • JavaScript • HTML5</span>
+            <span className="tech">Django • Python • React • JavaScript</span>
+
+            <div className="project-buttons">
+              <a
+                href="https://github.com/PraveenSankar03/ai-code-explainer"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="secondary-btn">GitHub</button>
+              </a>
+            </div>
+          </div>
+
+          <div className="project-image">
+            <img src="Ai_code_explainer.png" alt="AI App" />
+          </div>
+        </div>
+
+        <div className="project-showcase">
+          <div className="project-text">
+            <h2>Movie Browser Application</h2>
+
+            <p>
+              A dynamic movie exploration app powered by real-time API data.
+              to browse and view detailed information about
+              movies with a smooth and UI.
+            </p>
+
+            <ul>
+              <li>Built a movie browser application using React to explore and view
+              movies.</li>
+              <li> Integrated the TMDB API to fetch real-time movie data.</li>
+              <li>Designed a simple, clean, and user-friendly interface.</li>
+              <li>Implemented component-based architecture for better code
+              organization.</li>
+            </ul>
+
+            <span className="tech">React • JavaScript • HTML5 • CSS3</span>
 
             <div className="project-buttons">
               <a
@@ -58,7 +93,6 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* PROJECT 2 (REVERSED) */}
         <div className="project-showcase reverse">
           <div className="project-text">
             <h2>Social MicroBlogging Platform</h2>
@@ -69,10 +103,11 @@ const Projects = () => {
             </p>
 
             <ul>
-              <li>User authentication with Django</li>
-              <li>Follow / unfollow system</li>
-              <li>Post creation & deletion</li>
-              <li>Profile-based content system</li>
+              <li>Developed a lightweight social media app that allows
+                users to post, share.</li>
+              <li>Implemented user authentication with secure login and signup.</li>
+              <li>Built functionality to create and delete posts.</li>
+              <li> Implemented backend logic using Django to manage users, posts.</li>
             </ul>
 
             <span className="tech">Django • Python • JavaScript</span>
@@ -93,10 +128,9 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* PROJECT 3 */}
         <div className="project-showcase">
           <div className="project-text">
-            <h2>Weather Fetcher</h2>
+            <h2>Weather Fetcher Application</h2>
 
             <p>
               A smart weather app demonstrating chained API calls using
@@ -104,10 +138,14 @@ const Projects = () => {
             </p>
 
             <ul>
-              <li>Geocoding → coordinates</li>
-              <li>Open-Meteo API integration</li>
-              <li>Async data flow handling</li>
-              <li>Clean React state management</li>
+              <li>This project taught me to handle API requests, manage
+                states.</li>
+              <li>User enters a city. The app sends a request to a
+                Geocoding API.</li>
+              <li>That API translates the city name into geographic
+                coordinates.</li>
+              <li>the coordinates are returned. then app uses them to make a
+                second request.</li>
             </ul>
 
             <span className="tech">React • JavaScript • CSS3</span>
