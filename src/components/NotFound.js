@@ -31,7 +31,7 @@ const NotFound = () => {
           transition={{ delay: 0.4 }}
           className="notfound-text"
         >
-          The page you're looking for doesn't exist or has been moved.
+          The page you're looking for doesn't exist.
         </motion.p>
 
         <motion.div

@@ -50,7 +50,6 @@ const AboutView = () => {
               architecture.
             </p>
             <p>
-              {" "}
               I focus on creating responsive, high-performance user interfaces
               and writing maintainable, production-ready code. Currently, I’m
               seeking an entry-level opportunity where I can contribute to

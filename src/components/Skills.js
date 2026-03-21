@@ -15,7 +15,6 @@ const Skills = () => {
           Technologies I Work With
         </motion.h1>
 
-        {/* FRONTEND */}
         <div className="skills-section">
           <h2>Frontend</h2>
           <div className="skills-grid">
@@ -51,7 +50,6 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* BACKEND */}
         <div className="skills-section">
           <h2>Backend</h2>
           <div className="skills-grid">
@@ -67,7 +65,6 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* CMS */}
         <div className="skills-section">
           <h2>CMS</h2>
           <div className="skills-grid">
@@ -78,7 +75,6 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* TOOLS */}
         <div className="skills-section">
           <h2>Tools</h2>
           <div className="skills-grid">

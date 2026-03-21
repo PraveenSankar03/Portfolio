@@ -16,12 +16,12 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg premium-navbar sticky-top">
       <div className="container-fluid px-4">
-        {/* LEFT */}
+
         <Link className="navbar-brand" to="/">
           MY PORTFOLIO
         </Link>
 
-        {/* TOGGLER */}
+
         <button
           className="navbar-toggler border-0 shadow-none"
           type="button"
@@ -31,7 +31,7 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* RIGHT */}
+
         <div
           className="collapse navbar-collapse justify-content-end align-items-center"
           id="navbarNav"

@@ -22,7 +22,7 @@ const Home = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          Fullstack Developer
+          Full Stack Developer
         </motion.p>
 
         <motion.p
@@ -55,7 +55,7 @@ const Home = () => {
             <button className="primary-btn">View Projects</button>
           </Link>
 
-          <a href="/PRAVEEN_RESUME.pdf" target="_blank" rel="noreferrer">
+          <a href="/MY_RESUME.pdf" target="_blank" rel="noreferrer">
             <button className="secondary-btn">View Resume</button>
           </a>
         </motion.div>
