@@ -62,21 +62,46 @@ const Skills = () => {
               <img src="python.jpg" alt="Python" />
               <span>Python</span>
             </div>
-          </div>
-        </div>
 
-        <div className="skills-section">
-          <h2>CMS</h2>
-          <div className="skills-grid">
             <div className="skill-item">
-              <img src="wagtail.png" alt="Wagtail" />
-              <span>Wagtail</span>
+              <img src="django-rest.png" alt="rest" />
+              <span>REST Framework</span>
             </div>
           </div>
         </div>
 
         <div className="skills-section">
-          <h2>Tools</h2>
+          <h2>AI & ML</h2>
+          <div className="skills-grid">
+            <div className="skill-item">
+              <img src="Ollama.png" alt="ollama" />
+              <span>Ollama</span>
+            </div>
+
+            <div className="skill-item">
+              <img src="Qwen.png" alt="qwen" />
+              <span>Qwen (LLM)</span>
+            </div>
+
+             <div className="skill-item">
+              <img src="Phi.png" alt="phi" />
+              <span>Phi (LLM)</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="skills-section">
+          <h2>Database</h2>
+          <div className="skills-grid">
+            <div className="skill-item">
+              <img src="SQLite.png" alt="SQL" />
+              <span>SQLite</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="skills-section">
+          <h2>Tools & Platforms</h2>
           <div className="skills-grid">
             <div className="skill-item">
               <img src="git.png" alt="Git" />
@@ -91,6 +116,11 @@ const Skills = () => {
             <div className="skill-item">
               <img src="vscode.jpg" alt="VS Code" />
               <span>VS Code</span>
+            </div>
+
+            <div className="skill-item">
+              <img src="vercel.png" alt="vercel" />
+              <span>Vercel</span>
             </div>
           </div>
         </div>

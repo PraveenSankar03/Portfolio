@@ -42,7 +42,7 @@ const Home = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7 }}
         >
-          React • JavaScript • Django • Python • AI Integration • Git • GitHub
+          React • JavaScript • Django • Python • AI • LLM • Git • GitHub
         </motion.p>
 
         <motion.div
