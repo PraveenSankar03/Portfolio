@@ -78,11 +78,6 @@ const Skills = () => {
               <span>Ollama</span>
             </div>
 
-            <div className="skill-item">
-              <img src="Qwen.png" alt="qwen" />
-              <span>Qwen (LLM)</span>
-            </div>
-
              <div className="skill-item">
               <img src="Phi.png" alt="phi" />
               <span>Phi (LLM)</span>
