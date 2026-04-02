@@ -89,6 +89,10 @@ const Skills = () => {
           <h2>Database</h2>
           <div className="skills-grid">
             <div className="skill-item">
+              <img src="Postgres.png" alt="SQL" />
+              <span>PostgreSQL</span>
+            </div>
+            <div className="skill-item">
               <img src="SQLite.png" alt="SQL" />
               <span>SQLite</span>
             </div>

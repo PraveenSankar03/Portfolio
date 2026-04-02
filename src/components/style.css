@@ -134,7 +134,10 @@ body[data-bs-theme="dark"] .theme-btn {
 .name {
   background: linear-gradient(90deg, #22d3ee, #6366f1);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
+  display: inline-block;
 }
 
 .hero-description {
@@ -387,6 +390,11 @@ body[data-bs-theme="dark"] .about-card li {
   justify-content: space-between;
   gap: 40px;
   margin-bottom: 80px;
+  border: 1px solid #e5e5e5;
+  border-radius: 18px;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
 .project-showcase.reverse {
@@ -398,7 +406,7 @@ body[data-bs-theme="dark"] .about-card li {
 }
 
 .project-text h2 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin-bottom: 12px;
 }
 
@@ -427,6 +435,9 @@ body[data-bs-theme="dark"] .about-card li {
 
 .project-image {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .project-image img {
@@ -447,11 +458,52 @@ body[data-bs-theme="dark"] .about-card li {
   gap: 10px;
 }
 
+.project-insights {
+  display: flex;
+  gap: 30px;
+  margin: 18px 0;
+}
+
+.project-insights > div {
+  flex: 1;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 15px;
+  background: #fafafa;
+  transition: all 0.2s ease;
+}
+
+.project-insights > div:hover {
+  transform: translateY(-3px);
+}
+
+.project-insights h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.project-insights ul {
+  padding-left: 18px;
+  margin-bottom: 10px;
+}
+
+.project-insights li {
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+  line-height: 1.5;
+  color: #444;
+}
+
 @media (max-width: 900px) {
   .project-showcase {
     flex-direction: column;
   }
   .project-showcase.reverse {
+    flex-direction: column;
+  }
+   .project-insights {
     flex-direction: column;
   }
 }
@@ -466,6 +518,27 @@ body[data-bs-theme="dark"] .tech {
   color: #bbb;
 }
 
+body[data-bs-theme="dark"] .project-showcase {
+  border: 1px solid #2a2a2a;
+  background: #151515;
+}
+
+body[data-bs-theme="dark"] .project-showcase {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+body[data-bs-theme="dark"] .project-insights > div {
+  border: 1px solid #2a2a2a;
+  background: #1a1a1a;
+}
+
+body[data-bs-theme="dark"] .project-insights h3 {
+  color: #eee;
+}
+
+body[data-bs-theme="dark"] .project-insights li {
+  color: #bbb;
+}
 
 
 

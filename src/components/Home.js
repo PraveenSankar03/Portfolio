@@ -1,7 +1,7 @@
 import "./style.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { FaGithub, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaEnvelope, FaLinkedin } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
           transition={{ duration: 0.7 }}
           className="hero-title"
         >
-          Hi, I'm <span class='name'>Praveen Kumar</span>
+          Hi, I'm <span className="name">Praveen Kumar</span>
         </motion.h1>
 
         <motion.p
@@ -42,7 +42,7 @@ const Home = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7 }}
         >
-          React • JavaScript • Django • Python • AI • LLM • Git • GitHub
+          Python • Django • JavaScript • React • AI • LLM • Git • GitHub
         </motion.p>
 
         <motion.div
@@ -55,7 +55,7 @@ const Home = () => {
             <button className="primary-btn">View Projects</button>
           </Link>
 
-          <a href="/MY_RESUME.pdf" target="_blank" rel="noreferrer">
+          <a href="/Praveen's_Resume.pdf" target="_blank" rel="noreferrer">
             <button className="secondary-btn">View Resume</button>
           </a>
         </motion.div>
@@ -76,6 +76,14 @@ const Home = () => {
 
           <a href="mailto:praveensankar3333@gmail.com">
             <FaEnvelope />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/praveen-kumar-40109b366/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaLinkedin />
           </a>
         </motion.div>
       </div>
