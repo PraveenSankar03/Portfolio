@@ -55,7 +55,7 @@ const Home = () => {
             <button className="primary-btn">View Projects</button>
           </Link>
 
-          <a href="/Praveen's_Resume.pdf" target="_blank" rel="noreferrer">
+          <a href="/My_Resume.pdf" target="_blank" rel="noreferrer">
             <button className="secondary-btn">View Resume</button>
           </a>
         </motion.div>

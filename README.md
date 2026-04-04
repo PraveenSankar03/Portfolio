@@ -26,4 +26,5 @@ It showcases my projects, technical skills, and contact information.
 ````
 GitHub: https://github.com/PraveenSankar03
 Email: praveensankar3333@gmail.com
+LinkedIn: https://www.linkedin.com/in/praveen-kumar-40109b366/
 ````
