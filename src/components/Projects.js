@@ -82,14 +82,14 @@ const Projects = () => {
 
         <div className="project-showcase reverse">
           <div className="project-text">
-            <h2>AI Code Explainer</h2>
+            <h2>AI Code Explainer and Debugger</h2>
             <p>
-              An AI powerd web application designed to help programmers
-              understand unfamiliar code quickly.
+              An AI code analyser designed to help programmers
+              understand and debug unfamiliar code quickly.
             </p>
             <ul>
               <li>
-                AI-powered system that explains the code with step-by-step
+                AI-powered system that both explains and debugs the code with step-by-step
                 outputs.
               </li>
               <li>
@@ -109,7 +109,7 @@ const Projects = () => {
               <div>
                 <h3>Challenges:</h3>
                 <ul>
-                  <li>Handling large code inputs efficiently</li>
+                  <li>Handling code inputs efficiently</li>
                   <li>Designing meaningful AI prompts</li>
                   <li>Securing API keys and requests</li>
                 </ul>
@@ -117,7 +117,7 @@ const Projects = () => {
               <div>
                 <h3>What I Learned:</h3>
                 <ul>
-                  <li>Prompt engineering basics</li>
+                  <li>Prompt engineering</li>
                   <li>Building REST APIs with Django</li>
                   <li>Frontend-backend communication</li>
                 </ul>
@@ -128,7 +128,7 @@ const Projects = () => {
 
             <div className="project-buttons">
               <a
-                href="https://github.com/PraveenSankar03/ai-code-explainer"
+                href="https://github.com/PraveenSankar03/AI-code-explainer-debugger"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -138,8 +138,8 @@ const Projects = () => {
           </div>
 
           <div className="project-image">
-            <img src="Ai_code_explainer.png" alt="AI App" />
-            <img src="AI_code_2.png" alt="AI extra" />
+            <img src="AI_explainer_1.png" alt="AI App" />
+            <img src="AI_explainer_2.png" alt="AI extra" />
           </div>
         </div>
 
