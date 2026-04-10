@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import ReactDOM from "react-dom";
 import {
   motion,
   AnimatePresence,
@@ -233,7 +234,7 @@ function Particles() {
         if (p.y > H) p.y = 0;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(0,122,255,${p.a})`; 
+        ctx.fillStyle = `rgba(0,122,255,${p.a})`;
         ctx.fill();
       });
       for (let i = 0; i < pts.length; i++) {
@@ -245,7 +246,7 @@ function Particles() {
             ctx.beginPath();
             ctx.moveTo(pts[i].x, pts[i].y);
             ctx.lineTo(pts[j].x, pts[j].y);
-            ctx.strokeStyle = `rgba(0,122,255,${0.09 * (1 - d / 130)})`; 
+            ctx.strokeStyle = `rgba(0,122,255,${0.09 * (1 - d / 130)})`;
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }
@@ -343,69 +344,113 @@ function Navbar({ activeSection, scrollTo, darkMode, toggleDark }) {
     return () => el?.removeEventListener("scroll", h);
   }, []);
   return (
-    <motion.nav
-      className={`navbar ${scrolled ? "nb--scrolled" : ""}`}
-      initial={{ y: -80, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-    >
-      <div className="nb-inner">
-        <button className="nb-brand" onClick={() => scrollTo(0)}>
-          <span className="nb-brand-dot" />
-          PK
-        </button>
-        <ul className="nb-links">
-          {NAV_ITEMS.map((item, i) => (
-            <li key={item}>
-              <button
-                className={`nb-link ${activeSection === i ? "nb-link--on" : ""}`}
-                onClick={() => scrollTo(i)}
-              >
-                {item}
-                {activeSection === i && (
-                  <motion.span className="nb-underline" layoutId="ul" />
-                )}
-              </button>
-            </li>
-          ))}
-        </ul>
-        <div className="nb-right">
-          <button className="nb-theme" onClick={toggleDark}>
-            {darkMode ? "☀" : "☾"}
+    <>
+      <motion.nav
+        className={`navbar ${scrolled ? "nb--scrolled" : ""}`}
+        initial={{ y: -80, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+      >
+        <div className="nb-inner">
+          <button className="nb-brand" onClick={() => scrollTo(0)}>
+            <span className="nb-brand-dot" />
+            PK
           </button>
-          <button className="nb-ham" onClick={() => setOpen((p) => !p)}>
-            <span className={open ? "o" : ""} />
-            <span className={open ? "o" : ""} />
-            <span className={open ? "o" : ""} />
-          </button>
-        </div>
-      </div>
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            className="nb-mobile"
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.28 }}
-          >
+          <ul className="nb-links">
             {NAV_ITEMS.map((item, i) => (
-              <button
-                key={item}
-                className="nb-mob-link"
-                onClick={() => {
-                  scrollTo(i);
-                  setOpen(false);
-                }}
-              >
-                <span>0{i + 1}</span>
-                {item}
-              </button>
+              <li key={item}>
+                <button
+                  className={`nb-link ${activeSection === i ? "nb-link--on" : ""}`}
+                  onClick={() => scrollTo(i)}
+                >
+                  {item}
+                  {activeSection === i && (
+                    <motion.span className="nb-underline" layoutId="ul" />
+                  )}
+                </button>
+              </li>
             ))}
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </motion.nav>
+          </ul>
+          <div className="nb-right">
+            <button className="nb-theme" onClick={toggleDark}>
+              {darkMode ? "☀" : "☾"}
+            </button>
+            <button
+              className={`nb-ham ${open ? "nb-ham--open" : ""}`}
+              onClick={() => setOpen((p) => !p)}
+              aria-label="Toggle menu"
+              aria-expanded={open}
+            >
+              <span className={open ? "o" : ""} />
+              <span className={open ? "o" : ""} />
+              <span className={open ? "o" : ""} />
+            </button>
+          </div>
+        </div>
+      </motion.nav>
+      {ReactDOM.createPortal(
+        <AnimatePresence>
+          {open && (
+            <motion.div
+              className="nb-mobile-overlay"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.28 }}
+            >
+              <div className="nb-mobile-header">
+                <button
+                  className="nb-brand"
+                  onClick={() => {
+                    scrollTo(0);
+                    setOpen(false);
+                  }}
+                >
+                  <span className="nb-brand-dot" />
+                  PK
+                </button>
+                <button
+                  className="nb-mobile-close"
+                  onClick={() => setOpen(false)}
+                  aria-label="Close menu"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                </button>
+              </div>
+              <ul className="nb-mobile-links">
+                {NAV_ITEMS.map((item, i) => (
+                  <li key={item}>
+                    <button
+                      className="nb-mob-link"
+                      onClick={() => {
+                        scrollTo(i);
+                        setOpen(false);
+                      }}
+                    >
+                      <span>0{i + 1}</span>
+                      {item}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          )}
+        </AnimatePresence>,
+        document.body,
+      )}
+    </>
   );
 }
 
@@ -861,7 +906,7 @@ export default function App() {
   const [dark, setDark] = useState(
     window.matchMedia &&
       window.matchMedia("(prefers-color-scheme: dark)").matches,
-  ); 
+  );
   const refs = useRef([]);
 
   const scrollTo = (i) => {
