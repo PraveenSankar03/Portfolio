@@ -699,10 +699,11 @@ function Skills() {
             <em>Tools.</em>
           </h2>
         </motion.div>
+
         <div className="skills-all">
           {SKILLS.map((g, gi) => (
             <motion.div
-              className="skills-group"
+              className="skills-group-block"
               key={g.category}
               initial={{ opacity: 0, y: 28 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -710,19 +711,21 @@ function Skills() {
               transition={{ delay: gi * 0.07 }}
             >
               <span className="skills-cat">{g.category}</span>
-              <div className="skills-row">
+              <div className="skills-card">
                 {g.items.map((sk, si) => (
                   <motion.div
-                    className="skill-pill"
+                    className="skill-row-item"
                     key={sk.name}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
+                    initial={{ opacity: 0, x: -12 }}
+                    whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    transition={{ delay: gi * 0.04 + si * 0.035 }}
-                    whileHover={{ y: -7, scale: 1.08 }}
+                    transition={{ delay: gi * 0.04 + si * 0.04 }}
                   >
-                    <img src={sk.img} alt={sk.name} />
-                    <span>{sk.name}</span>
+                    <div className="skill-icon-wrap">
+                      <img src={sk.img} alt={sk.name} />
+                    </div>
+                    <span className="skill-name">{sk.name}</span>
+                    <span className="skill-chevron">›</span>
                   </motion.div>
                 ))}
               </div>
