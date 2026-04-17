@@ -14,8 +14,8 @@ const NAV_ITEMS = ["Home", "About", "Skills", "Projects"];
 const PROJECTS = [
   {
     id: 1,
-    label: "AI · LOCAL LLM",
-    title: "Personal AI Assistant using Local LLM",
+    label: "AI · LLM",
+    title: "Privacy-First Local LLM Orchestration Engine",
     subtitle: "Fully offline. Zero cost. Complete privacy.",
     desc: "Full-stack AI system using Ollama Qwen 4B with persistent memory, chat history, and privacy-first offline architecture.",
     tech: ["Ollama", "Django", "React", "CSS3"],
@@ -23,6 +23,7 @@ const PROJECTS = [
     accent: "#007AFF",
     num: "01",
     img: "Personal_AI.png",
+    img_2: "Personal_AI_2.png",
     challenges: [
       "Local LLM latency",
       "Persistent memory without cloud",
@@ -37,7 +38,7 @@ const PROJECTS = [
   {
     id: 2,
     label: "AI · DEVELOPER TOOL",
-    title: "AI Code Writer, Explainer, Debugger",
+    title: "AI-Powered Coding Intelligence Studio",
     subtitle: "Write. Explain. Fix. Powered by Gemini.",
     desc: "Three precision-engineered modes — code gen, line-by-line explanation, and bug fixing — with a secure Django backend.",
     tech: ["Django", "Python", "React", "Gemini API"],
@@ -45,6 +46,7 @@ const PROJECTS = [
     accent: "#34C759",
     num: "02",
     img: "AI_explainer_1.png",
+    img_2: "AI_explainer_2.png",
     challenges: [
       "Prompt consistency per mode",
       "Stateless Django with varied inputs",
@@ -58,16 +60,36 @@ const PROJECTS = [
   },
   {
     id: 3,
+    label: "DJANGO · FULL STACK",
+    title: "Full-Stack Social Microblogging Platform",
+    subtitle: "Post. Follow. Connect.",
+    desc: "Lightweight social platform with secure auth, post CRUD, and dynamic feed — fully built on Django.",
+    tech: ["Django", "Python", "JavaScript", "SQLite"],
+    github: "https://github.com/PraveenSankar03/django-social-media",
+    accent: "#FF9500",
+    num: "03",
+    img: "Opinions.jpeg",
+    img_2: "Opinions_2.png",
+    challenges: [
+      "Secure user auth",
+      "Relational DB models",
+      "Dynamic feed updates",
+    ],
+    learned: ["Django auth system", "CRUD in full-stack", "DB relationships"],
+  },
+  {
+    id: 4,
     label: "REACT · TMDB API",
-    title: "Movie Browser Application",
+    title: "Real-Time Film Search Interface",
     subtitle: "Real-time data. Clean UI. Instant results.",
     desc: "Dynamic movie exploration with live TMDB API. Component-based architecture with smooth states and minimal interface.",
     tech: ["React", "JavaScript", "TMDB API", "CSS3"],
     github: "https://github.com/PraveenSankar03/Movie-Browser-using-React.js",
     live: "https://movie-browser-using-react-js.vercel.app/",
-    accent: "#FF9500",
-    num: "03",
+    accent: "#5856D6",
+    num: "04",
     img: "movie_browser_2.png",
+    img_2: "Moviebrowser.jpeg",
     challenges: [
       "Async API calls",
       "Loading & error states",
@@ -80,27 +102,9 @@ const PROJECTS = [
     ],
   },
   {
-    id: 4,
-    label: "DJANGO · FULL STACK",
-    title: "Social MicroBlogging Application",
-    subtitle: "Post. Follow. Connect.",
-    desc: "Lightweight social platform with secure auth, post CRUD, and dynamic feed — fully built on Django.",
-    tech: ["Django", "Python", "JavaScript", "SQLite"],
-    github: "https://github.com/PraveenSankar03/django-social-media",
-    accent: "#5856D6",
-    num: "04",
-    img: "Opinions.jpeg",
-    challenges: [
-      "Secure user auth",
-      "Relational DB models",
-      "Dynamic feed updates",
-    ],
-    learned: ["Django auth system", "CRUD in full-stack", "DB relationships"],
-  },
-  {
     id: 5,
     label: "REACT · CHAINED APIs",
-    title: "Weather Fetcher Application",
+    title: "Location-Based Weather Dashboard",
     subtitle: "City in. Weather out. Two APIs, one flow.",
     desc: "Smart chained API calls — Geocoding translates city to coords, which feeds a weather API. Error-handled throughout.",
     tech: ["React", "JavaScript", "Open-Meteo", "CSS3"],
@@ -108,7 +112,8 @@ const PROJECTS = [
     live: "https://weather-fetcher-using-react.vercel.app/",
     accent: "#FF2D55",
     num: "05",
-    img: "weather_fetcher.png",
+    img: "weather_2.png",
+    img_2: "weather_fetcher.png",
     challenges: [
       "Dependent API chains",
       "Invalid city edge cases",
@@ -700,32 +705,31 @@ function Skills() {
           </h2>
         </motion.div>
 
-        <div className="skills-all">
+        <div className="skills-grid">
           {SKILLS.map((g, gi) => (
             <motion.div
-              className="skills-group-block"
+              className={`skills-block${g.category === "Tools" ? " skills-block--wide" : ""}`}
               key={g.category}
               initial={{ opacity: 0, y: 28 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: gi * 0.07 }}
             >
-              <span className="skills-cat">{g.category}</span>
-              <div className="skills-card">
+              <div className="skills-block-label">{g.category}</div>
+              <div className="skills-chips">
                 {g.items.map((sk, si) => (
                   <motion.div
-                    className="skill-row-item"
+                    className="skill-chip"
                     key={sk.name}
-                    initial={{ opacity: 0, x: -12 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: gi * 0.04 + si * 0.04 }}
                   >
-                    <div className="skill-icon-wrap">
+                    <div className="skill-chip-icon">
                       <img src={sk.img} alt={sk.name} />
                     </div>
-                    <span className="skill-name">{sk.name}</span>
-                    <span className="skill-chevron">›</span>
+                    <span className="skill-chip-name">{sk.name}</span>
                   </motion.div>
                 ))}
               </div>
@@ -799,13 +803,22 @@ function Projects() {
                       className={`proj-body-inner ${p.img ? "proj-body-inner--featured" : ""}`}
                     >
                       {p.img && (
-                        <div className="proj-screenshot-wrap">
-                          <img
-                            src={p.img}
-                            alt={p.title + " screenshot"}
-                            className="proj-screenshot"
-                          />
-                        </div>
+                        <>
+                          <div className="proj-screenshot-wrap">
+                            <img
+                              src={p.img}
+                              alt={p.title + " screenshot"}
+                              className="proj-screenshot"
+                            />
+                          </div>
+                          <div className="proj-screenshot-wrap">
+                            <img
+                              src={p.img_2}
+                              alt={p.title + " screenshot"}
+                              className="proj-screenshot"
+                            />
+                          </div>
+                        </>
                       )}
                       <div className="proj-desc-col">
                         <p className="proj-subtitle">{p.subtitle}</p>
