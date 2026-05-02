@@ -17,7 +17,7 @@ const PROJECTS = [
     label: "AI · LLM",
     title: "Privacy-First Local LLM Orchestration Engine",
     subtitle: "Fully offline. Zero cost. Complete privacy.",
-    desc: "Full-stack AI system using Ollama Qwen 4B with persistent memory, chat history, and privacy-first offline architecture.",
+    desc: "Architected a fully offline AI engine powered by a local LLM (Qwen 4B via Ollama). Reduced API cost to absolute zero and maximized user data privacy with complete autonomy — no cloud, no telemetry. Built a ChatGPT-style React UI with persistent session memory and real-time chat. Eliminated third-party orchestration overhead by building a custom Django REST layer for message routing, session state, and LLM inference.",
     tech: ["Ollama", "Django", "React", "CSS3"],
     github: "https://github.com/PraveenSankar03/local-llm-assistant",
     accent: "#007AFF",
@@ -25,14 +25,14 @@ const PROJECTS = [
     img: "Personal_AI.png",
     img_2: "Personal_AI_2.png",
     challenges: [
-      "Local LLM latency",
-      "Persistent memory without cloud",
-      "Clean state across chats",
+      "Managing local LLM latency without a loading UX that felt broken",
+      "Implementing persistent session memory entirely offline with no cloud state",
+      "Building a robust Django REST layer to handle message routing and LLM inference reliably",
     ],
     learned: [
-      "Local LLM pipelines",
-      "Full-stack state management",
-      "Privacy-first architecture",
+      "Local LLM pipeline architecture with Ollama",
+      "Designing privacy-first systems with zero external dependencies",
+      "Full-stack state management across a React frontend and Django backend",
     ],
   },
   {
@@ -40,7 +40,7 @@ const PROJECTS = [
     label: "AI · DEVELOPER TOOL",
     title: "AI-Powered Coding Intelligence Studio",
     subtitle: "Write. Explain. Fix. Powered by Gemini.",
-    desc: "Three precision-engineered modes — code gen, line-by-line explanation, and bug fixing — with a secure Django backend.",
+    desc: "Built a tri-mode code intelligence engine — GENERATE creates code from a natural language prompt, EXPLAIN dissects logic line by line, and DEBUG pinpoints bugs and surfaces fixes — all via Gemini 2.5 Flash and a Django REST backend in under 5 seconds. Designed the React frontend for zero page reloads and instant mode switching. Validated prompt stability across Python, JavaScript, C++, Java, and PHP.",
     tech: ["Django", "Python", "React", "Gemini API"],
     github: "https://github.com/PraveenSankar03/AI-code-explainer-debugger",
     accent: "#34C759",
@@ -48,14 +48,14 @@ const PROJECTS = [
     img: "AI_explainer_1.png",
     img_2: "AI_explainer_2.png",
     challenges: [
-      "Prompt consistency per mode",
-      "Stateless Django with varied inputs",
-      "Multi-mode UI clarity",
+      "Keeping prompt output consistent and structured across all three modes",
+      "Handling stateless Django views with varied, unpredictable user inputs",
+      "Designing a multi-mode UI that switches instantly without confusion",
     ],
     learned: [
-      "Prompt engineering",
-      "REST API security",
-      "External AI API architecture",
+      "Prompt engineering for reliable, structured AI outputs",
+      "Securing Django REST endpoints for external AI API calls",
+      "Building multi-mode React UIs with zero-reload state transitions",
     ],
   },
   {
@@ -63,7 +63,7 @@ const PROJECTS = [
     label: "DJANGO · FULL STACK",
     title: "Full-Stack Social Microblogging Platform",
     subtitle: "Post. Follow. Connect.",
-    desc: "Lightweight social platform with secure auth, post CRUD, and dynamic feed — fully built on Django.",
+    desc: "Engineered a full-stack microblogging platform with Django-allauth handling registration, login, and session lifecycle — keeping the entire auth flow under framework-native control. Modeled normalized database schemas with ownership-based access control, enabling post creation, follow/unfollow, and ensuring only post authors can edit or delete their own content.",
     tech: ["Django", "Python", "JavaScript", "SQLite"],
     github: "https://github.com/PraveenSankar03/django-social-media",
     accent: "#FF9500",
@@ -71,18 +71,22 @@ const PROJECTS = [
     img: "Opinions.jpeg",
     img_2: "Opinions_2.png",
     challenges: [
-      "Secure user auth",
-      "Relational DB models",
-      "Dynamic feed updates",
+      "Integrating Django-allauth for secure, framework-native session management",
+      "Designing normalized DB schemas with ownership-based access control",
+      "Enforcing that only post authors can modify or delete their own content",
     ],
-    learned: ["Django auth system", "CRUD in full-stack", "DB relationships"],
+    learned: [
+      "Django-allauth and secure session lifecycle management",
+      "Relational DB modeling and ownership access patterns",
+      "Full-stack CRUD architecture in the Django MVT pattern",
+    ],
   },
   {
     id: 4,
     label: "REACT · TMDB API",
     title: "Real-Time Film Search Interface",
     subtitle: "Real-time data. Clean UI. Instant results.",
-    desc: "Dynamic movie exploration with live TMDB API. Component-based architecture with smooth states and minimal interface.",
+    desc: "Built a dynamic movie exploration app consuming the live TMDB API. Designed a clean, component-based React architecture with smooth loading states, error boundaries, and instant search feedback. Deployed on Vercel with automatic CI/CD on every push.",
     tech: ["React", "JavaScript", "TMDB API", "CSS3"],
     github: "https://github.com/PraveenSankar03/Movie-Browser-using-React.js",
     live: "https://movie-browser-using-react-js.vercel.app/",
@@ -91,14 +95,14 @@ const PROJECTS = [
     img: "movie_browser_2.png",
     img_2: "Moviebrowser.jpeg",
     challenges: [
-      "Async API calls",
-      "Loading & error states",
-      "Component structure",
+      "Handling async API calls gracefully with loading and error states",
+      "Keeping the component tree clean and reusable across search and detail views",
+      "Debouncing search input to avoid excessive API calls",
     ],
     learned: [
-      "API integration in React",
-      "Component reusability",
-      "Lifecycle handling",
+      "Third-party REST API integration in React",
+      "Reusable component architecture and prop patterns",
+      "Deployment and CI/CD workflow with Vercel",
     ],
   },
   {
@@ -106,7 +110,7 @@ const PROJECTS = [
     label: "REACT · CHAINED APIs",
     title: "Location-Based Weather Dashboard",
     subtitle: "City in. Weather out. Two APIs, one flow.",
-    desc: "Smart chained API calls — Geocoding translates city to coords, which feeds a weather API. Error-handled throughout.",
+    desc: "Implemented smart chained API calls — a Geocoding API first translates a city name into coordinates, which then feeds the Open-Meteo weather API for real-time forecast data. Built full error handling for invalid cities, network failures, and empty states. Deployed live on Vercel.",
     tech: ["React", "JavaScript", "Open-Meteo", "CSS3"],
     github: "https://github.com/PraveenSankar03/weather-fetcher-using-react",
     live: "https://weather-fetcher-using-react.vercel.app/",
@@ -115,14 +119,14 @@ const PROJECTS = [
     img: "weather_2.png",
     img_2: "weather_fetcher.png",
     challenges: [
-      "Dependent API chains",
-      "Invalid city edge cases",
-      "Smooth UI updates",
+      "Sequencing two dependent async API calls without race conditions",
+      "Handling invalid city names and partial geocoding results gracefully",
+      "Keeping UI updates smooth during multi-step async loading",
     ],
     learned: [
-      "Chaining API requests",
-      "Async error handling",
-      "Loading UX patterns",
+      "Chaining dependent API requests with async/await in React",
+      "Building robust error handling across multi-step async flows",
+      "Loading UX patterns that feel responsive even on slow connections",
     ],
   },
 ];
@@ -491,10 +495,9 @@ function Home({ scrollTo }) {
           >
             <Typewriter
               words={[
+                "Software Engineer.",
                 "Full Stack Dev.",
-                "React Developer.",
-                "Django Developer.",
-                "AI Engineer.",
+                "AI Enthusiast.",
               ]}
             />
           </motion.span>
@@ -609,7 +612,7 @@ function About() {
     ["Location", "Chennai, Tamil Nadu"],
     ["Education", "B.Tech Biomedical Eng."],
     ["University", "Dr. M.G.R. Educational and Research Institute"],
-    ["Year", "2021 - 2025 · CGPA 8.4"],
+    ["Year", "2021 - 2025"],
     ["Role", "Full Stack Developer"],
   ];
   return (
@@ -672,10 +675,11 @@ function About() {
                 structured thinking.
               </p>
               <p>
-                I build production apps with <strong>React</strong> and{" "}
-                <strong>Django</strong>. REST APIs, auth systems, clean
-                architecture — that's my zone. I transitioned into software
-                deliberately, shipping real projects and learning by doing.
+                I build production ready apps with <strong>React</strong> and{" "}
+                <strong>Django</strong>. AI, LLMs, REST APIs, auth systems,
+                clean architecture — that's my zone. I transitioned into
+                software deliberately with specialization in Artificial
+                Intelligence, shipping real projects and learning by doing.
               </p>
               <p>
                 Seeking an entry-level role where I can contribute from day one.
@@ -710,10 +714,14 @@ function Skills() {
             <motion.div
               className={`skills-block${g.category === "Tools" ? " skills-block--wide" : ""}`}
               key={g.category}
-              initial={{ opacity: 0, y: 28 }}
+              initial={{ opacity: 0, y: 32 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: gi * 0.07 }}
+              transition={{
+                delay: gi * 0.09,
+                duration: 0.6,
+                ease: [0.16, 1, 0.3, 1],
+              }}
             >
               <div className="skills-block-label">{g.category}</div>
               <div className="skills-chips">
@@ -721,10 +729,14 @@ function Skills() {
                   <motion.div
                     className="skill-chip"
                     key={sk.name}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ delay: gi * 0.04 + si * 0.04 }}
+                    transition={{
+                      delay: gi * 0.05 + si * 0.055,
+                      duration: 0.45,
+                      ease: [0.16, 1, 0.3, 1],
+                    }}
                   >
                     <div className="skill-chip-icon">
                       <img src={sk.img} alt={sk.name} />
