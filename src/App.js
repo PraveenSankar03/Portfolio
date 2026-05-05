@@ -497,7 +497,9 @@ function Home({ scrollTo }) {
               words={[
                 "Software Engineer.",
                 "Full Stack Dev.",
-                "AI Enthusiast.",
+                "React Developer.",
+                "Python Developer.",
+                "AI Engineer.",
               ]}
             />
           </motion.span>
