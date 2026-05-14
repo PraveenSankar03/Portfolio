@@ -137,10 +137,11 @@ const SKILLS = [
     items: [
       { name: "React", img: "react.png" },
       { name: "JavaScript", img: "javascript.png" },
-      { name: "jQuery", img: "jquery.png" },
       { name: "HTML5", img: "html.png" },
       { name: "CSS3", img: "css.png" },
+      { name: "Tailwind CSS", img: "tailwind.png" },
       { name: "Bootstrap", img: "bootstrap.png" },
+      { name: "jQuery", img: "jquery.png" },
     ],
   },
   {
@@ -148,7 +149,7 @@ const SKILLS = [
     items: [
       { name: "Django", img: "django.png" },
       { name: "Python", img: "python.jpg" },
-      { name: "REST Framework", img: "django-rest.png" },
+      { name: "Django REST Framework", img: "django-rest.png" },
     ],
   },
   {
@@ -156,6 +157,9 @@ const SKILLS = [
     items: [
       { name: "Ollama", img: "Ollama.png" },
       { name: "Phi (LLM)", img: "Phi.png" },
+      { name: "Llama (LLM)", img: "llama.png" },
+      { name: "Mistral (LLM)", img: "mistral.png" },
+      { name: "Qwen (LLM)", img: "qwen.png" },
     ],
   },
   {
@@ -172,6 +176,7 @@ const SKILLS = [
       { name: "GitHub", img: "github.png" },
       { name: "VS Code", img: "vscode.jpg" },
       { name: "Vercel", img: "vercel.png" },
+      { name: "CI/CD", img: "cicd.png" },
     ],
   },
 ];
@@ -495,11 +500,11 @@ function Home({ scrollTo }) {
           >
             <Typewriter
               words={[
-                "Software Engineer.",
                 "Full Stack Dev.",
                 "React Developer.",
                 "Python Developer.",
-                "AI Engineer.",
+                "Software Engineer.",
+                "AI Integrated systems.",
               ]}
             />
           </motion.span>
@@ -612,7 +617,7 @@ function About() {
   const rows = [
     ["Name", "Praveen Kumar S"],
     ["Location", "Chennai, Tamil Nadu"],
-    ["Education", "B.Tech Biomedical Eng."],
+    ["Education", "B.Tech Biomedical Engineering"],
     ["University", "Dr. M.G.R. Educational and Research Institute"],
     ["Year", "2021 - 2025"],
     ["Role", "Full Stack Developer"],
@@ -673,7 +678,7 @@ function About() {
             <div className="about-prose">
               <p>
                 I'm a Full Stack Developer from a Biomedical Engineering
-                background — an unusual edge that sharpened my analytical and
+                background - an unusual edge that sharpened my analytical and
                 structured thinking.
               </p>
               <p>
@@ -905,7 +910,7 @@ function Projects() {
           <div className="contact-actions">
             <MagBtn
               className="btn-primary"
-              href="mailto:praveensankar3333@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=praveensankar3333@gmail.com"
               target="_blank"
             >
               Get in Touch
