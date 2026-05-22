@@ -15,7 +15,7 @@ const PROJECTS = [
   {
     id: 1,
     label: "AI · LLM",
-    title: "Privacy-First Local LLM Orchestration Engine",
+    title: "Privacy First Local LLM Orchestration Engine",
     subtitle: "Fully offline. Zero cost. Complete privacy.",
     desc: "Architected a fully offline AI engine powered by a local LLM (Qwen 4B via Ollama). Reduced API cost to absolute zero and maximized user data privacy with complete autonomy — no cloud, no telemetry. Built a ChatGPT-style React UI with persistent session memory and real-time chat. Eliminated third-party orchestration overhead by building a custom Django REST layer for message routing, session state, and LLM inference.",
     tech: ["Ollama", "Django", "React", "CSS3"],
@@ -38,7 +38,7 @@ const PROJECTS = [
   {
     id: 2,
     label: "AI · DEVELOPER TOOL",
-    title: "AI-Powered Coding Intelligence Studio",
+    title: "AI Powered Coding Intelligence Studio",
     subtitle: "Write. Explain. Fix. Powered by Gemini.",
     desc: "Built a tri-mode code intelligence engine — GENERATE creates code from a natural language prompt, EXPLAIN dissects logic line by line, and DEBUG pinpoints bugs and surfaces fixes — all via Gemini 2.5 Flash and a Django REST backend in under 5 seconds. Designed the React frontend for zero page reloads and instant mode switching. Validated prompt stability across Python, JavaScript, C++, Java, and PHP.",
     tech: ["Django", "Python", "React", "Gemini API"],
@@ -61,7 +61,7 @@ const PROJECTS = [
   {
     id: 3,
     label: "DJANGO · FULL STACK",
-    title: "Full-Stack Social Microblogging Platform",
+    title: "Full Stack Social Microblogging Platform",
     subtitle: "Post. Follow. Connect.",
     desc: "Engineered a full-stack microblogging platform with Django-allauth handling registration, login, and session lifecycle — keeping the entire auth flow under framework-native control. Modeled normalized database schemas with ownership-based access control, enabling post creation, follow/unfollow, and ensuring only post authors can edit or delete their own content.",
     tech: ["Django", "Python", "JavaScript", "SQLite"],
@@ -84,7 +84,7 @@ const PROJECTS = [
   {
     id: 4,
     label: "REACT · TMDB API",
-    title: "Real-Time Film Search Interface",
+    title: "Real Time Film Search Interface",
     subtitle: "Real-time data. Clean UI. Instant results.",
     desc: "Built a dynamic movie exploration app consuming the live TMDB API. Designed a clean, component-based React architecture with smooth loading states, error boundaries, and instant search feedback. Deployed on Vercel with automatic CI/CD on every push.",
     tech: ["React", "JavaScript", "TMDB API", "CSS3"],
@@ -108,7 +108,7 @@ const PROJECTS = [
   {
     id: 5,
     label: "REACT · CHAINED APIs",
-    title: "Location-Based Weather Dashboard",
+    title: "Location Based Weather Dashboard",
     subtitle: "City in. Weather out. Two APIs, one flow.",
     desc: "Implemented smart chained API calls — a Geocoding API first translates a city name into coordinates, which then feeds the Open-Meteo weather API for real-time forecast data. Built full error handling for invalid cities, network failures, and empty states. Deployed live on Vercel.",
     tech: ["React", "JavaScript", "Open-Meteo", "CSS3"],
@@ -137,9 +137,9 @@ const SKILLS = [
     items: [
       { name: "React", img: "react.png" },
       { name: "JavaScript", img: "javascript.png" },
+      { name: "Tailwind CSS", img: "tailwind.png" },
       { name: "HTML5", img: "html.png" },
       { name: "CSS3", img: "css.png" },
-      { name: "Tailwind CSS", img: "tailwind.png" },
       { name: "Bootstrap", img: "bootstrap.png" },
       { name: "jQuery", img: "jquery.png" },
     ],
@@ -147,19 +147,20 @@ const SKILLS = [
   {
     category: "Backend",
     items: [
-      { name: "Django", img: "django.png" },
       { name: "Python", img: "python.jpg" },
+      { name: "Django", img: "django.png" },
       { name: "Django REST Framework", img: "django-rest.png" },
+      { name: "REST API", img: "rest_api.png" },
     ],
   },
   {
     category: "AI & ML",
     items: [
       { name: "Ollama", img: "Ollama.png" },
-      { name: "Phi (LLM)", img: "Phi.png" },
-      { name: "Llama (LLM)", img: "llama.png" },
-      { name: "Mistral (LLM)", img: "mistral.png" },
+      { name: "Llama", img: "llama.png" },
       { name: "Qwen (LLM)", img: "qwen.png" },
+      { name: "Google Gemini API", img: "gemini.png" },
+      { name: "Prompt Engineering", img: "prompt_engg.png" },
     ],
   },
   {
@@ -490,7 +491,7 @@ function Home({ scrollTo }) {
             animate={{ opacity: 1, y: 0, skewY: 0 }}
             transition={{ delay: 0.15, duration: 1, ease: [0.16, 1, 0.3, 1] }}
           >
-            Praveen Kumar
+            Praveen Kumar S
           </motion.span>
           <motion.span
             className="ht-line2"
@@ -500,11 +501,10 @@ function Home({ scrollTo }) {
           >
             <Typewriter
               words={[
+                "Software Developer",
                 "Full Stack Dev.",
-                "React Developer.",
-                "Python Developer.",
-                "Software Engineer.",
-                "AI Integrated systems.",
+                "React Developer",
+                "Python Developer",
               ]}
             />
           </motion.span>
@@ -684,7 +684,7 @@ function About() {
               <p>
                 I build production ready apps with <strong>React</strong> and{" "}
                 <strong>Django</strong>. AI, LLMs, REST APIs, auth systems,
-                clean architecture — that's my zone. I transitioned into
+                clean architecture - that's my zone. I transitioned into
                 software deliberately with specialization in Artificial
                 Intelligence, shipping real projects and learning by doing.
               </p>

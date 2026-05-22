@@ -775,20 +775,8 @@ em {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at top left, rgba(10, 132, 255, 0.05) 0%, transparent 65%);
-  opacity: 0;
   transition: opacity 0.3s var(--ease);
   pointer-events: none;
-}
-
-.skills-block:hover {
-  transform: translateY(-5px) scale(1.01);
-  border-color: rgba(10, 132, 255, 0.35);
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1), 0 0 0 0.5px rgba(10, 132, 255, 0.15);
-}
-
-.skills-block:hover::before {
-  opacity: 1;
 }
 
 .skills-block--wide {
