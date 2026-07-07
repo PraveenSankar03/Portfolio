@@ -92,8 +92,8 @@ const PROJECTS = [
     live: "https://movie-browser-using-react-js.vercel.app/",
     accent: "#5856D6",
     num: "04",
-    img: "movie_browser_2.png",
-    img_2: "Moviebrowser.jpeg",
+    img: "movie_browser_1.png",
+    img_2: "movie_browser_2.png",
     challenges: [
       "Handling async API calls gracefully with loading and error states",
       "Keeping the component tree clean and reusable across search and detail views",
