@@ -137,11 +137,10 @@ const SKILLS = [
     items: [
       { name: "React", img: "react.png" },
       { name: "JavaScript", img: "javascript.png" },
-      { name: "Tailwind CSS", img: "tailwind.png" },
       { name: "HTML5", img: "html.png" },
       { name: "CSS3", img: "css.png" },
       { name: "Bootstrap", img: "bootstrap.png" },
-      { name: "jQuery", img: "jquery.png" },
+      { name: "jQuery", img: "jquery.png" }
     ],
   },
   {
@@ -150,17 +149,16 @@ const SKILLS = [
       { name: "Python", img: "python.jpg" },
       { name: "Django", img: "django.png" },
       { name: "Django REST Framework", img: "django-rest.png" },
-      { name: "REST API", img: "rest_api.png" },
+      { name: "REST APIs", img: "rest_api.png" }
     ],
   },
   {
     category: "AI & ML",
     items: [
       { name: "Ollama", img: "Ollama.png" },
-      { name: "Llama", img: "llama.png" },
-      { name: "Qwen (LLM)", img: "qwen.png" },
-      { name: "Google Gemini API", img: "gemini.png" },
+      { name: "Llama 3B", img: "llama.png" },
       { name: "Prompt Engineering", img: "prompt_engg.png" },
+      { name: "Google Gemini API", img: "gemini.png" }
     ],
   },
   {
@@ -168,6 +166,7 @@ const SKILLS = [
     items: [
       { name: "PostgreSQL", img: "Postgres.png" },
       { name: "SQLite", img: "SQLite.png" },
+      { name: "MySQL", img: "mysql.png" },
     ],
   },
   {
@@ -178,6 +177,10 @@ const SKILLS = [
       { name: "VS Code", img: "vscode.jpg" },
       { name: "Vercel", img: "vercel.png" },
       { name: "CI/CD", img: "cicd.png" },
+      { name: "SDLC", img: "sdlc.png" },
+      { name: "Numpy", img: "numpy.png" },
+      { name: "Pandas", img: "pandas.png" },
+      { name: "Matplotlib", img: "matplt.png" },
     ],
   },
 ];
