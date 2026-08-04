@@ -5,13 +5,40 @@ It showcases my projects, technical skills, and contact information.
 
 ## Tech Stack
 
-- React
-- JavaScript (ES6+)
-- Django
-- Python
+### Frontend
+
 - HTML5
 - CSS3
-- Git & GitHub
+- JavaScript (ES6+)
+- React
+- Tailwind CSS
+- Bootstrap
+
+### Backend
+
+- Python
+- Django
+- Django REST Framework
+- REST APIs
+
+### Backend
+
+- PostgreSQL
+- MySQL
+- SQLite
+
+### AI / LLM
+
+- Prompt Engineering
+- Ollama
+- Gemini API
+
+### Tools
+
+- Git
+- GitHub
+- CI/CD
+- Vercel
 
 ## Features
 
