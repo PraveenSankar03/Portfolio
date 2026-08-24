@@ -556,7 +556,7 @@ function Home({ scrollTo }) {
             <FaEnvelope />
           </a>
           <a
-            href="https://www.linkedin.com/in/praveen-kumar-40109b366/"
+            href="https://www.linkedin.com/in/praveen-kumar-s-40109b366/"
             target="_blank"
             rel="noreferrer"
             className="soc-icon"
@@ -928,7 +928,7 @@ function Projects() {
             </MagBtn>
             <MagBtn
               className="btn-ghost"
-              href="https://www.linkedin.com/in/praveen-kumar-40109b366/"
+              href="https://www.linkedin.com/in/praveen-kumar-s-40109b366/"
               target="_blank"
             >
               LinkedIn ↗
