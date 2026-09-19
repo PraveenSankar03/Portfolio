@@ -9,7 +9,46 @@ import {
 import { FaGithub, FaEnvelope, FaLinkedin } from "react-icons/fa";
 import "./App.css";
 
-const NAV_ITEMS = ["Home", "About", "Skills", "Projects"];
+const NAV_ITEMS = ["Home", "About", "Skills", "Experience", "Projects"];
+
+const EXPERIENCE = [
+  {
+    role: "Software Engineer",
+    company: "Foyer Technology Pvt Ltd.",
+    period: "September 2026 - Present",
+    summary:
+      "Building end-to-end web applications with React, Django, and AI integrations, focused on polished UX and production-ready architecture.",
+    highlights: [
+      "Develop and maintain features for production applications across the frontend and backend.",
+      "Build and integrate REST APIs and database-backed services with a focus on reliability and clean code.",
+      "Collaborate through code reviews, Git workflows, and agile delivery to ship maintainable software.",
+    ],
+  },
+  {
+    role: "React & Python Developer Intern",
+    company: "Besant Technologies",
+    period: "May 2026 - August 2026",
+    summary:
+      "Worked across frontend and backend layers to deliver feature-rich products, from data dashboards to AI assistants.",
+    highlights: [
+      "Completed an internship, gaining hands-on experience in full-stack development using Python, Django, React.js." ,
+      "developed web application while applying software development, debugging, and problem-solving practices.",
+      "Collaborated with seniors and strengthened practical knowledge of development and SDLC.",
+    ],
+  },
+  {
+    role: "Junior Biomedical Engineer Intern",
+    company: "Madras Medical Mission Hospital",
+    period: "October 2021 - May 2025",
+    summary:
+      "Gained hands-on exposure to biomedical equipment and clinical workflows, applying engineering fundamentals to real healthcare settings.",
+    highlights: [
+      "Supported the maintenance, calibration, and safety testing of biomedical equipment used in patient care.",
+      "Documented equipment inspections and service records, following hospital and regulatory standards.",
+      "Observed clinical workflows and worked with clinical staff to understand how devices are used day to day.",
+    ],
+  },
+];
 
 const PROJECTS = [
   {
@@ -134,6 +173,8 @@ const PROJECTS = [
 const SKILLS = [
   {
     category: "Frontend",
+    accent: "#007AFF",
+    rgb: "0, 122, 255",
     items: [
       { name: "React", img: "react.png" },
       { name: "JavaScript", img: "javascript.png" },
@@ -145,6 +186,8 @@ const SKILLS = [
   },
   {
     category: "Backend",
+    accent: "#34C759",
+    rgb: "52, 199, 89",
     items: [
       { name: "Python", img: "python.jpg" },
       { name: "Django", img: "django.png" },
@@ -154,6 +197,8 @@ const SKILLS = [
   },
   {
     category: "AI & ML",
+    accent: "#5856D6",
+    rgb: "88, 86, 214",
     items: [
       { name: "Ollama", img: "Ollama.png" },
       { name: "Llama 3B", img: "llama.png" },
@@ -163,6 +208,8 @@ const SKILLS = [
   },
   {
     category: "Database",
+    accent: "#FF9500",
+    rgb: "255, 149, 0",
     items: [
       { name: "PostgreSQL", img: "Postgres.png" },
       { name: "SQLite", img: "SQLite.png" },
@@ -171,6 +218,8 @@ const SKILLS = [
   },
   {
     category: "Tools",
+    accent: "#FF2D55",
+    rgb: "255, 45, 85",
     items: [
       { name: "Git", img: "git.png" },
       { name: "GitHub", img: "github.png" },
@@ -530,7 +579,7 @@ function Home({ scrollTo }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.72, duration: 0.7 }}
         >
-          <MagBtn className="btn-primary" onClick={() => scrollTo(3)}>
+          <MagBtn className="btn-primary" onClick={() => scrollTo(4)}>
             View Projects ↓
           </MagBtn>
           <MagBtn className="btn-ghost" href="/My_Resume.pdf" target="_blank">
@@ -704,6 +753,7 @@ function About() {
 }
 
 function Skills() {
+  const ease = [0.16, 1, 0.3, 1];
   return (
     <section className="section skills-section">
       <div className="section-inner">
@@ -720,43 +770,103 @@ function Skills() {
           </h2>
         </motion.div>
 
-        <div className="skills-grid">
+        <motion.div
+          className="sk-panel"
+          initial={{ opacity: 0, y: 32 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease }}
+        >
           {SKILLS.map((g, gi) => (
-            <motion.div
-              className={`skills-block${g.category === "Tools" ? " skills-block--wide" : ""}`}
+            <div
+              className="sk-row"
               key={g.category}
-              initial={{ opacity: 0, y: 32 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{
-                delay: gi * 0.09,
-                duration: 0.6,
-                ease: [0.16, 1, 0.3, 1],
-              }}
+              style={{ "--c": g.accent, "--rgb": g.rgb }}
             >
-              <div className="skills-block-label">{g.category}</div>
-              <div className="skills-chips">
+              <div className="sk-cat">
+                <span className="sk-cat-num">
+                  {String(gi + 1).padStart(2, "0")}
+                </span>
+                <div className="sk-cat-text">
+                  <h3 className="sk-cat-name">{g.category}</h3>
+                </div>
+              </div>
+
+              <div className="sk-list">
                 {g.items.map((sk, si) => (
                   <motion.div
-                    className="skill-chip"
                     key={sk.name}
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{
-                      delay: gi * 0.05 + si * 0.055,
+                      delay: 0.2 + gi * 0.06 + si * 0.04,
                       duration: 0.45,
-                      ease: [0.16, 1, 0.3, 1],
+                      ease,
                     }}
                   >
-                    <div className="skill-chip-icon">
-                      <img src={sk.img} alt={sk.name} />
+                    <div className="sk-chip">
+                      <span className="sk-chip-icon">
+                        <img src={sk.img} alt="" />
+                      </span>
+                      <span className="sk-chip-name">{sk.name}</span>
                     </div>
-                    <span className="skill-chip-name">{sk.name}</span>
                   </motion.div>
                 ))}
               </div>
-            </motion.div>
+            </div>
+          ))}
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
+function Experience() {
+  return (
+    <section className="section experience-section">
+      <div className="section-inner">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          <p className="eyebrow">My journey</p>
+          <h2 className="sec-title">
+            Work &
+            <br />
+            <em>Experience.</em>
+          </h2>
+        </motion.div>
+
+        <div className="exp-timeline">
+          {EXPERIENCE.map((item, i) => (
+            <motion.article
+              className="exp-item"
+              key={item.role}
+              initial={{ opacity: 0, y: 28 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1, duration: 0.6 }}
+            >
+              <div className="exp-side">
+                <span className="exp-period">{item.period}</span>
+              </div>
+              <span className="exp-dot" aria-hidden="true" />
+              <div className="exp-card">
+                <div className="exp-heading">
+                  <h3>{item.role}</h3>
+                  <span>{item.company}</span>
+                </div>
+                <p className="exp-summary">{item.summary}</p>
+                <ul className="exp-points">
+                  {item.highlights.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
+              </div>
+            </motion.article>
           ))}
         </div>
       </div>
@@ -1015,6 +1125,9 @@ export default function App() {
           <Skills />
         </div>
         <div ref={(el) => (refs.current[3] = el)}>
+          <Experience />
+        </div>
+        <div ref={(el) => (refs.current[4] = el)}>
           <Projects />
         </div>
       </main>
