@@ -14,7 +14,7 @@ const NAV_ITEMS = ["Home", "About", "Skills", "Experience", "Projects"];
 const EXPERIENCE = [
   {
     role: "Software Engineer",
-    company: "Foyer Technology Pvt Ltd.",
+    company: "Foyer Technologies Pvt Ltd.",
     period: "September 2026 - Present",
     summary:
       "Building end-to-end web applications with React, Django, and AI integrations, focused on polished UX and production-ready architecture.",
@@ -25,9 +25,9 @@ const EXPERIENCE = [
     ],
   },
   {
-    role: "React & Python Developer Intern",
+    role: "Full Stack Developer Intern",
     company: "Besant Technologies",
-    period: "May 2026 - August 2026",
+    period: "May 2026 - September 2026",
     summary:
       "Worked across frontend and backend layers to deliver feature-rich products, from data dashboards to AI assistants.",
     highlights: [
@@ -37,9 +37,9 @@ const EXPERIENCE = [
     ],
   },
   {
-    role: "Junior Biomedical Engineer Intern",
+    role: "Biomedical Engineer Intern",
     company: "Madras Medical Mission Hospital",
-    period: "October 2021 - May 2025",
+    period: "August 2023 - October 2023",
     summary:
       "Gained hands-on exposure to biomedical equipment and clinical workflows, applying engineering fundamentals to real healthcare settings.",
     highlights: [
@@ -200,9 +200,9 @@ const SKILLS = [
     accent: "#5856D6",
     rgb: "88, 86, 214",
     items: [
+      { name: "Prompt Engineering", img: "prompt_engg.png" },
       { name: "Ollama", img: "Ollama.png" },
       { name: "Llama 3B", img: "llama.png" },
-      { name: "Prompt Engineering", img: "prompt_engg.png" },
       { name: "Google Gemini API", img: "gemini.png" }
     ],
   },
@@ -214,6 +214,7 @@ const SKILLS = [
       { name: "PostgreSQL", img: "Postgres.png" },
       { name: "SQLite", img: "SQLite.png" },
       { name: "MySQL", img: "mysql.png" },
+      { name: "Django ORM", img: "orm.png" },
     ],
   },
   {
@@ -224,6 +225,7 @@ const SKILLS = [
       { name: "Git", img: "git.png" },
       { name: "GitHub", img: "github.png" },
       { name: "VS Code", img: "vscode.jpg" },
+      { name: "Antigravity", img: "antigravity.jpg" },
       { name: "Vercel", img: "vercel.png" },
       { name: "CI/CD", img: "cicd.png" },
       { name: "SDLC", img: "sdlc.png" },
