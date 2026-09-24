@@ -14,7 +14,7 @@ const NAV_ITEMS = ["Home", "About", "Skills", "Experience", "Projects"];
 const EXPERIENCE = [
   {
     role: "Software Engineer",
-    company: "Foyer Technologies Pvt Ltd.",
+    company: "Foyer Technologies Pvt Ltd, Chennai.",
     period: "September 2026 - Present",
     summary:
       "Building end-to-end web applications with React, Django, and AI integrations, focused on polished UX and production-ready architecture.",
@@ -26,7 +26,7 @@ const EXPERIENCE = [
   },
   {
     role: "Full Stack Developer Intern",
-    company: "Besant Technologies",
+    company: "Besant Technologies, Chennai.",
     period: "May 2026 - September 2026",
     summary:
       "Worked across frontend and backend layers to deliver feature-rich products, from data dashboards to AI assistants.",
@@ -38,7 +38,7 @@ const EXPERIENCE = [
   },
   {
     role: "Biomedical Engineer Intern",
-    company: "Madras Medical Mission Hospital",
+    company: "Madras Medical Mission Hospital, Chennai.",
     period: "August 2023 - October 2023",
     summary:
       "Gained hands-on exposure to biomedical equipment and clinical workflows, applying engineering fundamentals to real healthcare settings.",
